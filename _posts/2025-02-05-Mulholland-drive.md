@@ -1,11 +1,11 @@
 ---
-title: "Blue Velvet"
+title: "Mulholland Drive"
 date: 2025-02-02
 categories: [films]
 tags: [movie]
-data: blue-velvet
+data: mulholland-drive
 ---
 {% assign film = site.data.data[page.data] %}
 {% include header_films.html %}
-![Blue Velvet](assets/01-Blue-Velvet.jpeg)
+![Mulholland Drive](assets/02-Mulholland-Drive.webp)
 
