@@ -3,8 +3,9 @@ title: "Blue Velvet"
 date: 2025-02-02
 categories: [films]
 tags: [movie]
+data: blue-velvet
 ---
-
-# Blue Velvet... (David Lynch, 1986)
+{% assign film = site.data.data[page.data] %}
+by: {{ film.author }}
 ![Blue Velvet](assets/2025-02-02-BlueVelvet.jpeg)
 
