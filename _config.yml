@@ -11,6 +11,8 @@ lang: en
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
 timezone:
 
+
+
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
@@ -19,7 +21,7 @@ title: Pixelle! # the main title
 tagline: Pixelle is back # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  A minimal website
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -167,6 +169,10 @@ kramdown:
       start_line: 1
 
 collections:
+  movies:
+    output: true
+    permalink: /movies/:title # Optional: Customize the URL structure
+    sort_by: title
   tabs:
     output: true
     sort_by: order

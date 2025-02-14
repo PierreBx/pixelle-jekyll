@@ -13,10 +13,9 @@ def content = yaml.load(inputFile.text)
 content.each { key, value ->
   def postContent =
 """---
+layout: post
 title: ${value.post.title}
 date: ${value.post.date}
-tags:  ${value.post.tags}
-categories:  ${value.post.categories}
 author: ${value.content.author}
 releaseYear: ${value.content.releaseYear}
 picture: ${value.content.picture}
@@ -31,7 +30,7 @@ by: {{ page.author }} ({{ page.releaseYear }})
 {{ page.text }}
 
 """
-  def postFile = new File("./_posts/${value.post.date}-${key}.md")
+  def postFile = new File("./_movies/${key}.md")
   postFile.text = postContent
 }
 

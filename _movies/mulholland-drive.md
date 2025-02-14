@@ -1,8 +1,7 @@
 ---
+layout: post
 title: Mulholland Drive
 date: 2025-02-05
-tags:  [movie]
-categories:  [films]
 author: David Lynch
 releaseYear: 2001
 picture: assets/02-Mulholland-Drive.webp
