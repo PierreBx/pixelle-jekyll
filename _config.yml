@@ -171,7 +171,7 @@ kramdown:
 collections:
   movies:
     output: true
-    permalink: /movies/:title # Optional: Customize the URL structure
+    permalink: /:collection/:name # Optional: Customize the URL structure
     sort_by: title
   tabs:
     output: true
