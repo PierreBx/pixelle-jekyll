@@ -1,17 +1,26 @@
 import org.yaml.snakeyaml.Yaml
 
-
-def convertToSlug(input) {
-  return input.toLowerCase().replaceAll(/\s+/, '-')
+def greenText(String text) {
+  println "\u001B[32m${text}\u001B[0m"
 }
+
+def purpleText(String text) {
+  print "\u001B[35m${text}\u001B[0m"
+}
+
+
 // Load the YAML file
 def yaml = new Yaml() as Object
 def inputFile = new File('./_data/data.yml')
+println("   datafile retrieved...")
+
 def content = yaml.load(inputFile.text)
 
 // Create separate post files for each entry
 content.each { key, value ->
-  println("creating post file for ${key}...")
+  print("   creating post file for ")
+  purpleText(" ${key}")
+  print("...")
   def postContent =
 """---
 layout: post
@@ -22,11 +31,13 @@ releaseYear: ${value.content.releaseYear}
 ---
 
 by: {{ page.director }} ({{ page.releaseYear }})
+
+
 """
 
-  def postFile = new File("./_movies/${key}.md")
+  def postFile = new File("./_posts/${value.post.date}-${key}.md")
   postFile.text = postContent
-  println("done!")
+  greenText("done!")
 }
 
-println("post files created successfully!")
+println("   post files created successfully!")

@@ -14,7 +14,7 @@ movie.url | relative_url  : {{ movie.url | relative_url }}
 
 <h2>
 <a href="{{ movie.url | relative_url }}">
-{{ movie.title }} ({{ movie.author }}, {{ movie.releaseYear }})
+{{ movie.title }} ({{ movie.director }}, {{ movie.releaseYear }})
 </a>
 </h2>
 {% endfor %}

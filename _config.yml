@@ -167,8 +167,8 @@ kramdown:
 
 collections:
   movies:
-    output: true
-    permalink: /:collection/:name # Optional: Customize the URL structure
+    output: false
+    #permalink: /:collection/:name # Optional: Customize the URL structure
     sort_by: title
   tabs:
     output: true

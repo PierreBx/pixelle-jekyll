@@ -1,7 +1,7 @@
 blue-velvet:
   post:
     type: film
-    date: "2023-02-28"
+    date: "2025-01-28"
     tags :  [movie]
     categories: [films]
   content:
@@ -14,7 +14,7 @@ blue-velvet:
 mulholland-drive:
   post:
     type: film
-    date: "2023-03-02"
+    date: "2025-02-02"
     tags :  [movie]
     categories: [films]
   content:
