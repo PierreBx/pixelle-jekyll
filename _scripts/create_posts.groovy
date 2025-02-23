@@ -11,27 +11,23 @@ def content = yaml.load(inputFile.text)
 
 // Create separate post files for each entry
 content.each { key, value ->
+  println("creating post file for ${key}...")
   def postContent =
 """---
 layout: post
-title: ${value.post.title}
+title: ${value.content.title}
 date: ${value.post.date}
-author: ${value.content.author}
+director: ${value.content.director}
 releaseYear: ${value.content.releaseYear}
-picture: ${value.content.picture}
-text: ${value.content.text}
 ---
 
-by: {{ page.author }} ({{ page.releaseYear }})
-
-
-![{{ page.title }}]({{ page.picture }})
-
-{{ page.text }}
+by: {{ page.director }} ({{ page.releaseYear }})
 
 """
+
   def postFile = new File("./_movies/${key}.md")
   postFile.text = postContent
+  println("done!")
 }
 
 println("post files created successfully!")

@@ -1,0 +1,14 @@
+blue-velvet:
+  post:
+    type: film
+    date: "2023-03-02"
+    media: blv
+    tags :  [movie]
+    categories: [films]
+  content:
+    title: Blue Velvet
+    director: David Lynch
+    releaseYear: 1986
+  links:
+    - https://en.wikipedia.org/wiki/Blue_Velvet_(film)
+    - https://www.imdb.com/fr/title/tt0090756/
