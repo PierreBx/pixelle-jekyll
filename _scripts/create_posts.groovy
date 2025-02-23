@@ -22,7 +22,6 @@ releaseYear: ${value.content.releaseYear}
 ---
 
 by: {{ page.director }} ({{ page.releaseYear }})
-
 """
 
   def postFile = new File("./_movies/${key}.md")
