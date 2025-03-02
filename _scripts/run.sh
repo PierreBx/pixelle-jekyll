@@ -15,10 +15,10 @@ echo -n cleaning posts...
 rm ./_posts/*.md 2> /dev/null
 green_text done!
 
-echo -n cleaning assets and includes symlinks...
-rm ./_includes/media 2> /dev/null
-rm ./assets/media 2> /dev/null
-green_text done!
+#echo -n cleaning assets and ...
+#rm ./_includes/media 2> /dev/null
+#rm ./assets/media 2> /dev/null
+#green_text done!
 
 echo -n creating assets and includes files...
 cp -ru ./_data/media ./assets/

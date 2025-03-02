@@ -2,12 +2,16 @@ blue-velvet:
   post:
     type: film
     date: "2025-01-28"
-    tags :  [movie]
+    description:
+    tags: [movie]
     categories: [films]
   content:
     title: Blue Velvet
     director: David Lynch
     releaseYear: 1986
+  media:
+      text: text.md
+      picture: image.jpeg
   links:
     - https://en.wikipedia.org/wiki/Blue_Velvet_(film)
     - https://www.imdb.com/fr/title/tt0090756/
@@ -15,12 +19,16 @@ mulholland-drive:
   post:
     type: film
     date: "2025-02-02"
-    tags :  [movie]
+    description:
+    tags: [movie]
     categories: [films]
   content:
     title: Mulholland Drive
     director: David Lynch
-    releaseYear: 1986
+    releaseYear: 2001
+  media:
+    text: text.md
+    picture: image.webp
   links:
-    - https://en.wikipedia.org/wiki/Blue_Velvet_(film)
+    - https://en.wikipedia.org/wiki/Mulholland_Drive_(film)
     - https://www.imdb.com/fr/title/tt0090756/

@@ -8,7 +8,6 @@ def purpleText(String text) {
   print "\u001B[35m${text}\u001B[0m"
 }
 
-
 // Load the YAML file
 def yaml = new Yaml() as Object
 def inputFile = new File('./_data/data.yml')
@@ -21,16 +20,27 @@ content.each { key, value ->
   print("   creating post file for ")
   purpleText(" ${key}")
   print("...")
+  if (value.post.description == null) {
+    value.post.description = value.content.director + " (" + value.content.releaseYear + ")"
+  }
   def postContent =
 """---
 layout: post
+slug: ${key}
 title: ${value.content.title}
 date: ${value.post.date}
+description: ${value.post.description}
 director: ${value.content.director}
 releaseYear: ${value.content.releaseYear}
+image: assets/media/${key}/${value.media.picture}
+text: media/${key}/${value.media.text}
+tags: ${value.post.tags}
+categories: ${value.post.categories}
 ---
 
 by: {{ page.director }} ({{ page.releaseYear }})
+
+{% include  {{ page.text }} %}
 
 
 """
