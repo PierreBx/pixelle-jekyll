@@ -12,9 +12,7 @@ blue-velvet:
   media:
       text: text.md
       picture: image.jpeg
-  links:
-    - https://en.wikipedia.org/wiki/Blue_Velvet_(film)
-    - https://www.imdb.com/fr/title/tt0090756/
+  link: https://en.wikipedia.org/wiki/Blue_Velvet_(film)
 mulholland-drive:
   post:
     type: film
@@ -29,6 +27,19 @@ mulholland-drive:
   media:
     text: text.md
     picture: image.webp
-  links:
-    - https://en.wikipedia.org/wiki/Mulholland_Drive_(film)
-    - https://www.imdb.com/fr/title/tt0090756/
+  link: https://en.wikipedia.org/wiki/Mulholland_Drive_(film)
+twin-peaks:
+  post:
+    type: series
+    date: "2025-02-15"
+    description:
+    tags: [series]
+    categories: [series]
+  content:
+    title: Twin Peaks
+    director: David Lynch
+    releaseYear: 1990
+  media:
+    text: text.md
+    picture: image.jpg
+  link: https://en.wikipedia.org/wiki/Twin_Peaks
