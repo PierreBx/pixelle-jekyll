@@ -37,7 +37,7 @@ twin-peaks:
     categories: [series]
   content:
     title: Twin Peaks
-    director: David Lynch
+    creator: David Lynch
     releaseYear: 1990
   media:
     text: text.md

@@ -32,5 +32,5 @@ green_text done!
 
 echo creating posts...
 groovy ./_scripts/create_posts.groovy
-green_text "end of run.sh successfully!"
+echo "end of run.sh successfully!"
 
