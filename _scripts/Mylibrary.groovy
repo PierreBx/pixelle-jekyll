@@ -25,10 +25,14 @@ image: assets/media/${key}/${value.media.picture}
 text: media/${key}/${value.media.text}
 tags: ${value.post.tags}
 categories: ${value.post.categories}
+youtube: ${value.media.youtube}
 ---
 
 {% include  {{ page.text }} %}
 
+{% if page.youtube %}
+  {% youtube page.youtube %}
+{% endif %}
 
 """
 
@@ -54,10 +58,12 @@ image: assets/media/${key}/${value.media.picture}
 text: media/${key}/${value.media.text}
 tags: ${value.post.tags}
 categories: ${value.post.categories}
+youtube: ${value.media.youtube}
 ---
 
 {% include  {{ page.text }} %}
 
+{% youtube page.youtube %}
 
 """
 

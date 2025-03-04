@@ -10,8 +10,12 @@ image: assets/media/annie-hall/image.jpg
 text: media/annie-hall/text.md
 tags: [movie]
 categories: [films]
+youtube: https://youtu.be/5h5zurZsIQY?si=UBAuOLgEwbLJh03q
 ---
 
 {% include  {{ page.text }} %}
 
+{% if page.youtube %}
+  {% youtube page.youtube %}
+{% endif %}
 

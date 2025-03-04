@@ -34,4 +34,4 @@ content.each { key, value ->
 
 }
 
-println("   post files created successfully!")
+println("post files created successfully!")

@@ -30,6 +30,8 @@ baseurl: "/pixelle02"
 github:
   username: github_username # change to your GitHub username
 
+plugins: [jekyll-youtube]
+
 twitter:
   username: twitter_username # change to your Twitter username
 

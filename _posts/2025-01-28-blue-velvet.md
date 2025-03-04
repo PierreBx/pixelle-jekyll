@@ -10,8 +10,12 @@ image: assets/media/blue-velvet/image.jpeg
 text: media/blue-velvet/text.md
 tags: [movie]
 categories: [films]
+youtube: null
 ---
 
 {% include  {{ page.text }} %}
 
+{% if page.youtube %}
+  {% youtube page.youtube %}
+{% endif %}
 

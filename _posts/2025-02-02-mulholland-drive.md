@@ -10,8 +10,12 @@ image: assets/media/mulholland-drive/image.webp
 text: media/mulholland-drive/text.md
 tags: [movie]
 categories: [films]
+youtube: null
 ---
 
 {% include  {{ page.text }} %}
 
+{% if page.youtube %}
+  {% youtube page.youtube %}
+{% endif %}
 

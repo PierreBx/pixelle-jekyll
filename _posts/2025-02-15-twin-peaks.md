@@ -10,8 +10,10 @@ image: assets/media/twin-peaks/image.jpg
 text: media/twin-peaks/text.md
 tags: [series]
 categories: [series]
+youtube: null
 ---
 
 {% include  {{ page.text }} %}
 
+{% youtube page.youtube %}
 

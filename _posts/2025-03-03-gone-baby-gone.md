@@ -10,8 +10,12 @@ image: assets/media/gone-baby-gone/image.webp
 text: media/gone-baby-gone/text.md
 tags: [movie]
 categories: [films]
+youtube: null
 ---
 
 {% include  {{ page.text }} %}
 
+{% if page.youtube %}
+  {% youtube page.youtube %}
+{% endif %}
 
