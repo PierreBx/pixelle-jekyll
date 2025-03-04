@@ -8,6 +8,7 @@ creator: David Lynch
 releaseYear: 1990
 image: assets/media/twin-peaks/image.jpg
 text: media/twin-peaks/text.md
+pdf: ../../assets/media/twin-peaks/null
 tags: [series]
 categories: [series]
 youtube: null
@@ -18,4 +19,8 @@ youtube: null
 {% if page.youtube %}
   {% youtube page.youtube %}
 {% endif %}
+
+{% unless page.pdf contains "null" %}
+  {% pdf {{ page.pdf }} no_link %}
+{% endunless %}
 

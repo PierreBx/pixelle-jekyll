@@ -8,9 +8,11 @@ director: Ben Affleck
 releaseYear: 2007
 image: assets/media/gone-baby-gone/image.webp
 text: media/gone-baby-gone/text.md
+pdf: ../../assets/media/gone-baby-gone/null
 tags: [movie]
 categories: [films]
 youtube: null
+
 ---
 
 {% include  {{ page.text }} %}
@@ -18,4 +20,8 @@ youtube: null
 {% if page.youtube %}
   {% youtube page.youtube %}
 {% endif %}
+
+{% unless page.pdf contains "null" %}
+  {% pdf {{ page.pdf }} no_link %}
+{% endunless %}
 

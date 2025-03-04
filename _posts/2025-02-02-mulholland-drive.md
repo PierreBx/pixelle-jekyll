@@ -8,9 +8,11 @@ director: David Lynch
 releaseYear: 2001
 image: assets/media/mulholland-drive/image.webp
 text: media/mulholland-drive/text.md
+pdf: ../../assets/media/mulholland-drive/null
 tags: [movie]
 categories: [films]
 youtube: null
+
 ---
 
 {% include  {{ page.text }} %}
@@ -18,4 +20,8 @@ youtube: null
 {% if page.youtube %}
   {% youtube page.youtube %}
 {% endif %}
+
+{% unless page.pdf contains "null" %}
+  {% pdf {{ page.pdf }} no_link %}
+{% endunless %}
 

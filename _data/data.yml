@@ -6,7 +6,7 @@ carmina-burana:
     description: Choeur de l'Opéra de Bordeaux (Auditorium)
     tags: [ opera ]
     categories: [ events ]
-  place: Grand-théâtre
+  place: Auditorium
   content:
     - name: Carmina Burana
       type: cantate scénique

@@ -8,9 +8,11 @@ director: Woody Allen
 releaseYear: 1977
 image: assets/media/annie-hall/image.jpg
 text: media/annie-hall/text.md
+pdf: ../../assets/media/annie-hall/null
 tags: [movie]
 categories: [films]
 youtube: https://youtu.be/5h5zurZsIQY?si=UBAuOLgEwbLJh03q
+
 ---
 
 {% include  {{ page.text }} %}
@@ -18,4 +20,8 @@ youtube: https://youtu.be/5h5zurZsIQY?si=UBAuOLgEwbLJh03q
 {% if page.youtube %}
   {% youtube page.youtube %}
 {% endif %}
+
+{% unless page.pdf contains "null" %}
+  {% pdf {{ page.pdf }} no_link %}
+{% endunless %}
 

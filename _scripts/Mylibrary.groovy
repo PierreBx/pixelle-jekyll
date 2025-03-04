@@ -21,9 +21,11 @@ director: ${value.content.director}
 releaseYear: ${value.content.releaseYear}
 image: assets/media/${key}/${value.media.picture}
 text: media/${key}/${value.media.text}
+pdf: ../../assets/media/${key}/${value.media.pdf}
 tags: ${value.post.tags}
 categories: ${value.post.categories}
 youtube: ${value.media.youtube}
+
 ---
 
 {% include  {{ page.text }} %}
@@ -31,6 +33,10 @@ youtube: ${value.media.youtube}
 {% if page.youtube %}
   {% youtube page.youtube %}
 {% endif %}
+
+{% unless page.pdf contains "null" %}
+  {% pdf {{ page.pdf }} no_link %}
+{% endunless %}
 
 """
 
@@ -54,6 +60,7 @@ creator: ${value.content.creator}
 releaseYear: ${value.content.releaseYear}
 image: assets/media/${key}/${value.media.picture}
 text: media/${key}/${value.media.text}
+pdf: ../../assets/media/${key}/${value.media.pdf}
 tags: ${value.post.tags}
 categories: ${value.post.categories}
 youtube: ${value.media.youtube}
@@ -64,6 +71,10 @@ youtube: ${value.media.youtube}
 {% if page.youtube %}
   {% youtube page.youtube %}
 {% endif %}
+
+{% unless page.pdf contains "null" %}
+  {% pdf {{ page.pdf }} no_link %}
+{% endunless %}
 
 """
 
@@ -97,9 +108,11 @@ date: ${value.post.date}
 description: ${value.post.description}
 image: assets/media/${key}/${value.media.picture}
 text: media/${key}/${value.media.text}
+pdf: "../../assets/media/${key}/${value.media.pdf}"
 tags: ${value.post.tags}
 categories: ${value.post.categories}
 youtube: ${value.media.youtube}
+
 ---
 
 {% include  {{ page.text }} %}
@@ -110,7 +123,9 @@ ${resultString}
   {% youtube page.youtube %}
 {% endif %}
 
-
+{% unless page.pdf contains "null" %}
+  {% pdf {{ page.pdf }} no_link %}
+{% endunless %}
 
 """
 
