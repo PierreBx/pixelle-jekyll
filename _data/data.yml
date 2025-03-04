@@ -13,6 +13,21 @@ blue-velvet:
       text: text.md
       picture: image.jpeg
   link: https://en.wikipedia.org/wiki/Blue_Velvet_(film)
+gone-baby-gone:
+    post:
+      type: film
+      date: "2025-03-03"
+      description:
+      tags: [ movie ]
+      categories: [ films ]
+    content:
+      title: Gone Baby Gone
+      director: Ben Affleck
+      releaseYear: 2007
+    media:
+      text: text.md
+      picture: image.webp
+    link: https://en.wikipedia.org/wiki/Gone_Baby_Gone
 mulholland-drive:
   post:
     type: film
