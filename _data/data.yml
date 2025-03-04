@@ -9,7 +9,7 @@ sol-invictus:
   place: Pin Galant
   content:
     - name: Sol Invictus
-      type: dance
+      type: danse contemporaine
       author: Hervé Koubi
   media:
    text: text.md
