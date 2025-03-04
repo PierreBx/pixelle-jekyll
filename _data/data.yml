@@ -1,3 +1,20 @@
+sol-invictus:
+  post:
+    title: Sol Invictus
+    type: events
+    date: "2025-02-21"
+    description: Compagnie Hervé Koubi (Pin Galant)
+    tags: [ dance ]
+    categories: [ events ]
+  place: Pin Galant
+  content:
+    - name: Sol Invictus
+      type: dance
+      author: Hervé Koubi
+  media:
+   text: text.md
+   picture: image.jpg
+   youtube: https://www.youtube.com/watch?v=6bD6J7SY9lg
 annie-hall:
   post:
     type: film

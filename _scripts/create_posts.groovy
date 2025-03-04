@@ -29,6 +29,9 @@ content.each { key, value ->
     case "series":
       mylib.createSeriesPost(key, value)
       break
+    case "events":
+      mylib.createEventsPost(key, value)
+      break
   }
   mylib.greenText("done!")
 
