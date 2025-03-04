@@ -1,5 +1,7 @@
 #!/bin/bash
 
+PIXL_LOCAL_URL=http://127.0.0.1:4000/pixelle02/
+
 green_text() {
     echo -e "\e[32m$1\e[0m"
 }
@@ -30,7 +32,10 @@ green_text done!
 #ln -s ../_data/media ./assets/media
 #green_text done!
 
-echo creating posts...
+echo creating posts and launching local site...
 groovy ./_scripts/create_posts.groovy
+
 echo "end of run.sh successfully!"
+echo "waiting 1 sec before launching site"
+sleep 1 && google-chrome --new-tab $PIXL_LOCAL_URL
 

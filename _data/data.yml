@@ -1,3 +1,21 @@
+carmina-burana:
+  post:
+    title: Carmina Burana (Choeur)
+    type: events
+    date: "2025-02-19"
+    description: Choeur de l'Opéra de Bordeaux (Auditorium)
+    tags: [ opera ]
+    categories: [ events ]
+  place: Grand-théâtre
+  content:
+    - name: Carmina Burana
+      type: cantate scénique
+      author: Carl Orff
+      date: 1935
+  media:
+    text: text.md
+    picture: image.webp
+    pdf: livret.pdf
 sol-invictus:
   post:
     title: Sol Invictus

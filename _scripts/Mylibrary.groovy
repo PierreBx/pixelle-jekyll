@@ -61,7 +61,9 @@ youtube: ${value.media.youtube}
 
 {% include  {{ page.text }} %}
 
-{% youtube page.youtube %}
+{% if page.youtube %}
+  {% youtube page.youtube %}
+{% endif %}
 
 """
 
@@ -76,12 +78,12 @@ static void createEventsPost(String key, Object value) {
   }
 
   def list = new StringBuilder()
-  list.append("Programme : <br>")
+  list.append("**Programme** \r\r")
   value.content.each { item ->
     item.each { key2, value2 ->
-      list.append("* ${value2} ")
+      list.append("| ${value2} |")
     }
-    list.append("<br>")
+    list.append("\r")
   }
 
   def resultString = list.toString()
@@ -104,7 +106,11 @@ youtube: ${value.media.youtube}
 
 ${resultString}
 
-{% youtube page.youtube %}
+{% if page.youtube %}
+  {% youtube page.youtube %}
+{% endif %}
+
+
 
 """
 

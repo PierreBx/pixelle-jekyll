@@ -13,7 +13,11 @@ youtube: https://www.youtube.com/watch?v=6bD6J7SY9lg
 
 {% include  {{ page.text }} %}
 
-Programme : <br>* Sol Invictus * danse contemporaine * Hervé Koubi <br>
+**Programme** | Sol Invictus || danse contemporaine || Hervé Koubi |
 
-{% youtube page.youtube %}
+{% if page.youtube %}
+  {% youtube page.youtube %}
+{% endif %}
+
+
 

@@ -15,5 +15,7 @@ youtube: null
 
 {% include  {{ page.text }} %}
 
-{% youtube page.youtube %}
+{% if page.youtube %}
+  {% youtube page.youtube %}
+{% endif %}
 
