@@ -12,8 +12,6 @@ tags: [series]
 categories: [series]
 ---
 
-by: {{ page.creator }} ({{ page.releaseYear }})
-
 {% include  {{ page.text }} %}
 
 

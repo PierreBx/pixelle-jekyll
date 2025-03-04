@@ -27,8 +27,6 @@ tags: ${value.post.tags}
 categories: ${value.post.categories}
 ---
 
-by: {{ page.director }} ({{ page.releaseYear }})
-
 {% include  {{ page.text }} %}
 
 
@@ -57,8 +55,6 @@ text: media/${key}/${value.media.text}
 tags: ${value.post.tags}
 categories: ${value.post.categories}
 ---
-
-by: {{ page.creator }} ({{ page.releaseYear }})
 
 {% include  {{ page.text }} %}
 

@@ -12,8 +12,6 @@ tags: [movie]
 categories: [films]
 ---
 
-by: {{ page.director }} ({{ page.releaseYear }})
-
 {% include  {{ page.text }} %}
 
 
