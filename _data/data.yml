@@ -1,3 +1,26 @@
+le-barbier-de-seville-revisited:
+  post:
+    title: Le Barbier de Séville Revisited
+    type: ["event", "opéra"]
+    date: "2025-02-15"
+    description: Auditorium
+    tags: [ opera ]
+    categories: [ events ]
+  place: Auditorium
+  content:
+    - name: inspiré de
+      type: type
+      author: auteur
+    - name: Le Barbier de Séville
+      type: Opéra
+      author: Gioacchino Rossini
+    - name: Cyrano de Bergerac
+      type: pièce de théâtre
+      author: Edmond Rostand
+  media:
+    text: text.md
+    pdf: livret.pdf
+    picture: image.jpg
 le-chardonneret:
   post:
     title: Le Chardonneret
