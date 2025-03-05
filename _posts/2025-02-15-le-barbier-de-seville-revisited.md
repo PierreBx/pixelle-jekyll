@@ -13,9 +13,9 @@ youtube: null
 
 ---
 
-{% include  {{ page.text }} %}
-
 **Programme** | inspiré de || type || auteur || Le Barbier de Séville || Opéra || Gioacchino Rossini || Cyrano de Bergerac || pièce de théâtre || Edmond Rostand |
+
+{% include  {{ page.text }} %}
 
 {% if page.youtube %}
   {% youtube page.youtube %}
@@ -24,4 +24,10 @@ youtube: null
 {% unless page.pdf contains "null" %}
   {% pdf {{ page.pdf }} no_link %}
 {% endunless %}
+
+---
+
+<div>
+    <p style="text-align: left;"> <a href="https://www.google.com/search?q=Le+Barbier+de+Séville+Revisited+opéra+Auditorium+2025-02-15" target="_blank">Google it</a> </p>
+</div>
 

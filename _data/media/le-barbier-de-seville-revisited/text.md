@@ -1,6 +1,3 @@
-**Le Barbier de Séville Revisited**
-
-**Figaro de Bergerac**
 
 Nouvelle édition de l’Académie de l’Opéra National de Bordeaux qui regroupe, pour cette troisième édition, de jeunes artistes en émergence, sélectionnés pour être accueillis en résidence pendant un an par l’Opéra National de Bordeaux, et par plusieurs partenaires en vue de mettre en œuvre un projet créatif autour d’un grand opéra du répertoire. 
 Pendant plusieurs mois, ces jeunes artistes travaillent ensemble dans l’esprit d’un grand atelier collaboratif pour faire naître une adaptation libre, moderne et fantaisiste du Barbier de Séville.

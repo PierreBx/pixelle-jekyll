@@ -1,3 +1,14 @@
+static String fixLength(String input, int length) {
+  input.padRight(length).substring(0, length)
+}
+
+static String createGoogleSearchLink(Object... keywords) {
+  def baseUrl = "https://www.google.com/search?q="
+  def query = keywords.collect { it.toString().replaceAll(" ", "+") }.join("+")
+  def url = baseUrl + query
+  return "<a href=\"${url}\" target=\"_blank\">Google it</a>"
+}
+
 void greenText(String text) {
     println ("\u001B[32m${text}\u001B[0m")
   }
@@ -5,6 +16,10 @@ void greenText(String text) {
 static void purpleText(String text) {
     print "\u001B[35m${text}\u001B[0m"
   }
+
+static void redText(String text) {
+  print "\u001B[31m${text}\u001B[0m"
+}
 
 static void createMoviePost(String key, Object value) {
     if (value.post.description == null) {
@@ -88,17 +103,20 @@ static void createEventPost(String key, Object value) {
     value.post.description = ""
   }
 
-  def list = new StringBuilder()
-  list.append("**Programme** \r\r")
+  def program = new StringBuilder()
+  program.append("**Programme** \r\r")
   value.content.each { item ->
     item.each { key2, value2 ->
-      list.append("| ${value2} |")
+      program.append("| ${value2} |")
     }
-    list.append("\r")
+    program.append("\r")
   }
 
-  def resultString = list.toString()
-
+  def programString = program.toString()
+  def googleSearchString = createGoogleSearchLink(value.post.title,
+                                                         value.post.type[1],
+                                                         value.post.description,
+                                                         value.post.date)
   def postContent =
     """---
 layout: post
@@ -115,9 +133,9 @@ youtube: ${value.media.youtube}
 
 ---
 
-{% include  {{ page.text }} %}
+${programString}
 
-${resultString}
+{% include  {{ page.text }} %}
 
 {% if page.youtube %}
   {% youtube page.youtube %}
@@ -126,6 +144,12 @@ ${resultString}
 {% unless page.pdf contains "null" %}
   {% pdf {{ page.pdf }} no_link %}
 {% endunless %}
+
+---
+
+<div>
+    <p style="text-align: left;"> ${googleSearchString} </p>
+</div>
 
 """
 

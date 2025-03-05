@@ -21,7 +21,8 @@ mylib.greenText("done!")
 // Create separate post files for each entry
 content.each { key, value ->
   print("   creating post file for ")
-  mylib.purpleText(" ${key} (${value.post.type})...")
+  def fl = mylib.fixLength(value.post.type[0], 6)
+  mylib.purpleText("${fl} ${key} (${value.post.type[1]})...")
   switch(value.post.type[0]) {
     case "movie":
       mylib.createMoviePost(key, value)
@@ -35,6 +36,9 @@ content.each { key, value ->
     case "book":
       mylib.createBookPost(key, value)
       break
+    default :
+      mylib.redText("Unknown post type: '${value.post.type[0]}'.\r\r")
+      System.exit(1)
   }
   mylib.greenText("done!")
 

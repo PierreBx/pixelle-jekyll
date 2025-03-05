@@ -38,7 +38,7 @@ le-chardonneret:
 carmina-burana:
   post:
     title: Carmina Burana
-    type: ["events", "choeur"]
+    type: ["event", "choeur"]
     date: "2025-02-19"
     description: Choeur de l'Opéra de Bordeaux (Auditorium)
     tags: [ opera ]
