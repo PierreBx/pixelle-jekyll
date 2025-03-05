@@ -1,7 +1,7 @@
 ---
 layout: post
 slug: blue-velvet
-title: Blue Velvet
+title: Blue Velvet  |  film
 date: 2025-01-28
 description: David Lynch (1986)
 director: David Lynch

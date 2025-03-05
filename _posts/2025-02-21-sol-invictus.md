@@ -1,7 +1,7 @@
 ---
 layout: post
 slug: sol-invictus
-title: Sol Invictus
+title: Sol Invictus  |  danse
 date: 2025-02-21
 description: Compagnie Hervé Koubi (Pin Galant)
 image: assets/media/sol-invictus/image.jpg

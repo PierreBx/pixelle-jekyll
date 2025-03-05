@@ -1,7 +1,7 @@
 ---
 layout: post
 slug: annie-hall
-title: Annie Hall
+title: Annie Hall  |  film
 date: 1985-01-17
 description: Woody Allen (1977)
 director: Woody Allen

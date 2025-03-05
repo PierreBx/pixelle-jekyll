@@ -6,7 +6,7 @@ static void purpleText(String text) {
     print "\u001B[35m${text}\u001B[0m"
   }
 
-static void createFilmPost(String key, Object value) {
+static void createMoviePost(String key, Object value) {
     if (value.post.description == null) {
       value.post.description = value.content.director + " (" + value.content.releaseYear + ")"
     }
@@ -14,7 +14,7 @@ static void createFilmPost(String key, Object value) {
       """---
 layout: post
 slug: ${key}
-title: ${value.content.title}
+title: ${value.post.title}  |  ${value.post.type[1]}
 date: ${value.post.date}
 description: ${value.post.description}
 director: ${value.content.director}
@@ -53,7 +53,7 @@ static void createSeriesPost(String key, Object value) {
       """---
 layout: post
 slug: ${key}
-title: ${value.content.title}
+title: ${value.post.title}  |  ${value.post.type[1]}
 date: ${value.post.date}
 description: ${value.post.description}
 creator: ${value.content.creator}
@@ -83,7 +83,7 @@ youtube: ${value.media.youtube}
 
   }
 
-static void createEventsPost(String key, Object value) {
+static void createEventPost(String key, Object value) {
   if (value.post.description == null) {
     value.post.description = ""
   }
@@ -103,7 +103,7 @@ static void createEventsPost(String key, Object value) {
     """---
 layout: post
 slug: ${key}
-title: ${value.post.title}
+title: ${value.post.title}  |  ${value.post.type[1]}
 date: ${value.post.date}
 description: ${value.post.description}
 image: assets/media/${key}/${value.media.picture}
@@ -126,6 +126,34 @@ ${resultString}
 {% unless page.pdf contains "null" %}
   {% pdf {{ page.pdf }} no_link %}
 {% endunless %}
+
+"""
+
+  def postFile = new File("./_posts/${value.post.date}-${key}.md")
+  postFile.text = postContent
+
+}
+
+static void createBookPost(String key, Object value) {
+  if (value.post.description == null) {
+    value.post.description = "${value.content.author} (${value.content.published})"
+  }
+
+  def postContent =
+    """---
+layout: post
+slug: ${key}
+title: ${value.post.title}  |  ${value.post.type[1]}
+date: ${value.post.date}
+description: ${value.post.description}
+image: assets/media/${key}/${value.media.picture}
+text: media/${key}/${value.media.text}
+tags: ${value.post.tags}
+categories: ${value.post.categories}
+
+---
+
+{% include  {{ page.text }} %}
 
 """
 

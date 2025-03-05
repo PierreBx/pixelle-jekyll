@@ -22,15 +22,18 @@ mylib.greenText("done!")
 content.each { key, value ->
   print("   creating post file for ")
   mylib.purpleText(" ${key} (${value.post.type})...")
-  switch(value.post.type) {
-    case "film":
-      mylib.createFilmPost(key, value)
+  switch(value.post.type[0]) {
+    case "movie":
+      mylib.createMoviePost(key, value)
       break
     case "series":
       mylib.createSeriesPost(key, value)
       break
-    case "events":
-      mylib.createEventsPost(key, value)
+    case "event":
+      mylib.createEventPost(key, value)
+      break
+    case "book":
+      mylib.createBookPost(key, value)
       break
   }
   mylib.greenText("done!")

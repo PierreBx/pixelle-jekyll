@@ -1,7 +1,7 @@
 ---
 layout: post
 slug: twin-peaks
-title: Twin Peaks
+title: Twin Peaks  |  série
 date: 2025-02-15
 description: David Lynch (1990)
 creator: David Lynch

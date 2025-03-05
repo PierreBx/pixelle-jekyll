@@ -1,7 +1,7 @@
 ---
 layout: post
 slug: mulholland-drive
-title: Mulholland Drive
+title: Mulholland Drive  |  film
 date: 2025-02-02
 description: David Lynch (2001)
 director: David Lynch

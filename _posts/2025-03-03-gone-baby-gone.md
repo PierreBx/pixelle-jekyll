@@ -1,7 +1,7 @@
 ---
 layout: post
 slug: gone-baby-gone
-title: Gone Baby Gone
+title: Gone Baby Gone  |  film
 date: 2025-03-03
 description: Ben Affleck (2007)
 director: Ben Affleck

@@ -1,7 +1,21 @@
+le-chardonneret:
+  post:
+    title: Le Chardonneret
+    type: ["book", "roman"]
+    date: "2024-09-17"
+    description:
+    tags: [ book ]
+    categories: [ books ]
+  content:
+    author: Donna Tartt
+    published: 2013
+  media:
+    text: text.md
+    picture: image.png
 carmina-burana:
   post:
-    title: Carmina Burana (Choeur)
-    type: events
+    title: Carmina Burana
+    type: ["events", "choeur"]
     date: "2025-02-19"
     description: Choeur de l'Opéra de Bordeaux (Auditorium)
     tags: [ opera ]
@@ -19,7 +33,7 @@ carmina-burana:
 sol-invictus:
   post:
     title: Sol Invictus
-    type: events
+    type: ["event", "danse"]
     date: "2025-02-21"
     description: Compagnie Hervé Koubi (Pin Galant)
     tags: [ dance ]
@@ -35,7 +49,8 @@ sol-invictus:
    youtube: https://www.youtube.com/watch?v=6bD6J7SY9lg
 annie-hall:
   post:
-    type: film
+    title: Annie Hall
+    type: ["movie", "film"]
     date: "1985-01-17"
     description:
     tags: [movie]
@@ -51,7 +66,8 @@ annie-hall:
   link: https://en.wikipedia.org/wiki/Annie_Hall
 blue-velvet:
   post:
-    type: film
+    title: Blue Velvet
+    type: ["movie", "film"]
     date: "2025-01-28"
     description:
     tags: [movie]
@@ -66,7 +82,8 @@ blue-velvet:
   link: https://en.wikipedia.org/wiki/Blue_Velvet_(film)
 gone-baby-gone:
     post:
-      type: film
+      title: Gone Baby Gone
+      type: ["movie", "film"]
       date: "2025-03-03"
       description:
       tags: [ movie ]
@@ -81,7 +98,8 @@ gone-baby-gone:
     link: https://en.wikipedia.org/wiki/Gone_Baby_Gone
 mulholland-drive:
   post:
-    type: film
+    title: Mulholland Drive
+    type: ["movie", "film"]
     date: "2025-02-02"
     description:
     tags: [movie]
@@ -96,7 +114,8 @@ mulholland-drive:
   link: https://en.wikipedia.org/wiki/Mulholland_Drive_(film)
 twin-peaks:
   post:
-    type: series
+    title: Twin Peaks
+    type: ["series", "série"]
     date: "2025-02-15"
     description:
     tags: [series]
