@@ -1,9 +1,23 @@
+justice:
+  post:
+    title: Justice
+    type: ["event", "performance"]
+    date: "2025-02-05"
+    description: Hyperdrama Tour
+    tags: [ concert ]
+    categories: [ events ]
+  place: Arkéa Aréna
+  content:
+  media:
+    text: text.md
+    picture: image.jpg
+    youtube: https://youtu.be/f13IFaVfclM?si=YRY-yHfMxP1xMOmD
 khatia-buniatishvili:
   post:
     title: Khatia Buniatishvili
     type: ["event", "récital"]
     date: "2025-02-06"
-    description: Auditorium
+    description: Récital piano
     tags: [ recital ]
     categories: [ events ]
   place: Auditorium
@@ -25,9 +39,9 @@ khatia-buniatishvili:
 le-barbier-de-seville-revisited:
   post:
     title: Le Barbier de Séville Revisited
-    type: ["event", "opéra"]
+    type: ["event", "opéra jazz"]
     date: "2025-02-15"
-    description: Auditorium
+    description: Le Barbier version jazz...
     tags: [ opera ]
     categories: [ events ]
   place: Auditorium

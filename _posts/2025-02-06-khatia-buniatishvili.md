@@ -3,7 +3,7 @@ layout: post
 slug: khatia-buniatishvili
 title: Khatia Buniatishvili  |  récital
 date: 2025-02-06
-description: Auditorium
+description: Récital piano
 image: assets/media/khatia-buniatishvili/image.webp
 text: media/khatia-buniatishvili/text.md
 pdf: "../../assets/media/khatia-buniatishvili/livret.pdf"
@@ -28,6 +28,6 @@ youtube: null
 ---
 
 <div>
-    <p style="text-align: left;"> <a href="https://www.google.com/search?q=Khatia+Buniatishvili+récital+Auditorium+2025-02-06" target="_blank">Google it</a> </p>
+    <p style="text-align: left;"> <a href="https://www.google.com/search?q=Khatia+Buniatishvili+récital+Récital+piano+2025-02-06" target="_blank">Google it</a> </p>
 </div>
 

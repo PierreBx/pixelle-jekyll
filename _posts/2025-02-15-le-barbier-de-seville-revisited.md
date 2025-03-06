@@ -1,9 +1,9 @@
 ---
 layout: post
 slug: le-barbier-de-seville-revisited
-title: Le Barbier de Séville Revisited  |  opéra
+title: Le Barbier de Séville Revisited  |  opéra jazz
 date: 2025-02-15
-description: Auditorium
+description: Le Barbier version jazz...
 image: assets/media/le-barbier-de-seville-revisited/image.jpg
 text: media/le-barbier-de-seville-revisited/text.md
 pdf: "../../assets/media/le-barbier-de-seville-revisited/livret.pdf"
@@ -28,6 +28,6 @@ youtube: null
 ---
 
 <div>
-    <p style="text-align: left;"> <a href="https://www.google.com/search?q=Le+Barbier+de+Séville+Revisited+opéra+Auditorium+2025-02-15" target="_blank">Google it</a> </p>
+    <p style="text-align: left;"> <a href="https://www.google.com/search?q=Le+Barbier+de+Séville+Revisited+opéra+jazz+Le+Barbier+version+jazz...+2025-02-15" target="_blank">Google it</a> </p>
 </div>
 
