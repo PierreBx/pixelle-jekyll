@@ -1,3 +1,27 @@
+khatia-buniatishvili:
+  post:
+    title: Khatia Buniatishvili
+    type: ["event", "récital"]
+    date: "2025-02-06"
+    description: Auditorium
+    tags: [ recital ]
+    categories: [ events ]
+  place: Auditorium
+  content:
+    - author: Auteur
+      work: Oeuvre
+    - author: F. Schubert
+      work: 4 impromptus D.899
+    - author: F. Chopin
+      work: Sonate n.2
+    - author: W.A. Mozart
+      work: Sonate n°16 K545
+    - author: F. Liszt
+      work: Mephisto-valse n.1
+  media:
+    text: text.md
+    pdf: livret.pdf
+    picture: image.webp
 le-barbier-de-seville-revisited:
   post:
     title: Le Barbier de Séville Revisited
