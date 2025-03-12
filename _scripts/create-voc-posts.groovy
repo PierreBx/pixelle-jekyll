@@ -27,19 +27,19 @@ mylib.greenText("done!")
 def groupedWords = content.dictionary.groupBy { entry ->
   def word = entry.word.italian.itword
 
-  println("word: ${word}")
+//  println("word: ${word}")
   if (word && word[0]) {
     word[0].toLowerCase()
   } else {
     null
   }
 }
-println("size: ${groupedWords.size()}")
-println("Keys the entries are grouped by:")
+// println("size: ${groupedWords.size()}")
+// println("Keys the entries are grouped by:")
 groupedWords.each { key, value ->
   println("${key}: ${value.size()}")
 }
-println("Total number of entries: ${content.dictionary.size()}")
+// println("Total number of entries: ${content.dictionary.size()}")
 
 
 groupedWords.each { letter, entries ->

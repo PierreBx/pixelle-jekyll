@@ -36,6 +36,9 @@ content.each { key, value ->
     case "book":
       mylib.createBookPost(key, value)
       break
+    case "exhibition":
+      mylib.createExpoPost(key, value)
+      break
     default :
       mylib.redText("Unknown post type: '${value.post.type[0]}'.\r\r")
       System.exit(1)

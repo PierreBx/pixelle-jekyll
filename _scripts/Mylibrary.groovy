@@ -186,3 +186,37 @@ categories: ${value.post.categories}
 
 }
 
+static void createExpoPost(String key, Object value) {
+  if (value.post.description == null) {
+    value.post.description = "${value.content.city}"
+  }
+
+  def postContent =
+    """---
+layout: post
+slug: ${key}
+title: ${value.post.title}  |  ${value.post.type[1]}
+date: ${value.post.date}
+description: ${value.post.description}
+city: ${value.city}
+image: assets/media/${key}/${value.media.picture}
+text: media/${key}/${value.media.text}
+tags: ${value.post.tags}
+categories: ${value.post.categories}
+
+---
+
+{% include  {{ page.text }} %}
+
+"""
+  def picturesDir = new File("assets/media/${key}/${value.media.pictures}")
+  picturesDir.eachFile { file ->
+    postContent += "\n\n![text](${file.path})\n"
+      postContent += "\n${file.name}\n"
+  }
+
+  def postFile = new File("./_posts/${value.post.date}-${key}.md")
+  postFile.text = postContent
+
+}
+
