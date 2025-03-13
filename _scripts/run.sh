@@ -8,13 +8,8 @@ green_text() {
 
 clear
 
-echo -n deleting old posts...
-rm ./_posts/*.md 2> /dev/null
-rm ./_movies/*.md 2> /dev/null
-green_text done!
-
 echo -n cleaning posts...
-rm ./_posts/*.md 2> /dev/null
+rm ./_posts/*.md
 green_text done!
 
 echo -n creating assets and includes files...

@@ -212,7 +212,7 @@ categories: ${value.post.categories}
   def picturesDir = new File("assets/media/${key}/${value.media.pictures}")
   picturesDir.eachFile { file ->
     postContent += "\n\n![text](${file.path})\n"
-      postContent += "\n${file.name}\n"
+      postContent += "\n<div style=\"text-align: center;\"><i>${file.name.substring(0, file.name.lastIndexOf('.'))}</i></div>\n"
   }
 
   def postFile = new File("./_posts/${value.post.date}-${key}.md")
