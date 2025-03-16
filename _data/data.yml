@@ -30,6 +30,11 @@
     text: text.md
     picture: image.jpg
     addpictures: yes
+  map:
+    display: yes
+    markers:
+      - text: Hôtel d'Assézat
+        coordinates: [43.6002806652585, 1.4421788072331159]
 2025-02-05-justice:
   post:
     title: Justice
