@@ -19,9 +19,7 @@ youtube: null
 
 
 
-![text](assets/media/2025-03-13-brad-mehldau/pictures/affiche.jpg)
-
-<div style="text-align: center;"><i>affiche</i></div>
+![text](assets/media/2025-03-13-brad-mehldau/pictures/(affiche).jpg)
 
 
 {% if page.youtube %}
