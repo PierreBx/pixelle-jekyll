@@ -22,22 +22,25 @@ mylib.greenText("done!")
 content.each { key, value ->
   print("   creating post file for ")
   def fl = mylib.fixLength(value.post.type[0], 6)
-  mylib.purpleText("${fl} ${key} (${value.post.type[1]})...")
+
+  def date = key.substring(0, 10)
+  def slug = key.substring(11)
+  mylib.purpleText("${fl} ${date} ${slug} (${value.post.type[1]})...")
   switch(value.post.type[0]) {
     case "movie":
-      mylib.createMoviePost(key, value)
+      mylib.createMoviePost(key, value, date, slug)
       break
     case "series":
-      mylib.createSeriesPost(key, value)
+      mylib.createSeriesPost(key, value, date, slug)
       break
     case "event":
-      mylib.createEventPost(key, value)
+      mylib.createEventPost(key, value, date, slug)
       break
     case "book":
-      mylib.createBookPost(key, value)
+      mylib.createBookPost(key, value, date, slug)
       break
     case "exhibition":
-      mylib.createExpoPost(key, value)
+      mylib.createExpoPost(key, value, date, slug)
       break
     default :
       mylib.redText("Unknown post type: '${value.post.type[0]}'.\r\r")

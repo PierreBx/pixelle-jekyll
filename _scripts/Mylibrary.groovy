@@ -21,16 +21,17 @@ static void redText(String text) {
   print "\u001B[31m${text}\u001B[0m"
 }
 
-static void createMoviePost(String key, Object value) {
-    if (value.post.description == null) {
-      value.post.description = value.content.director + " (" + value.content.releaseYear + ")"
-    }
-    def postContent =
-      """---
+static void createMoviePost(String key, Object value, String date, String slug) {
+
+  if (value.post.description == null) {
+    value.post.description = value.content.director + " (" + value.content.releaseYear + ")"
+  }
+  def postContent =
+    """---
 layout: post
-slug: ${key}
+slug: ${slug}
 title: ${value.post.title}  |  ${value.post.type[1]}
-date: ${value.post.date}
+date: ${date}
 description: ${value.post.description}
 director: ${value.content.director}
 releaseYear: ${value.content.releaseYear}
@@ -55,21 +56,23 @@ youtube: ${value.media.youtube}
 
 """
 
-    def postFile = new File("./_posts/${value.post.date}-${key}.md")
+    def postFile = new File("./_posts/${key}.md")
     postFile.text = postContent
 
   }
 
-static void createSeriesPost(String key, Object value) {
-    if (value.post.description == null) {
-      value.post.description = value.content.creator + " (" + value.content.releaseYear + ")"
-    }
-    def postContent =
+static void createSeriesPost(String key, Object value, String date, String slug) {
+
+  if (value.post.description == null) {
+    value.post.description = value.content.creator + " (" + value.content.releaseYear + ")"
+  }
+
+  def postContent =
       """---
 layout: post
-slug: ${key}
+slug: ${slug}
 title: ${value.post.title}  |  ${value.post.type[1]}
-date: ${value.post.date}
+date: ${date}
 description: ${value.post.description}
 creator: ${value.content.creator}
 releaseYear: ${value.content.releaseYear}
@@ -93,12 +96,13 @@ youtube: ${value.media.youtube}
 
 """
 
-    def postFile = new File("./_posts/${value.post.date}-${key}.md")
+    def postFile = new File("./_posts/${key}.md")
     postFile.text = postContent
 
   }
 
-static void createEventPost(String key, Object value) {
+static void createEventPost(String key, Object value, String date, String slug) {
+
   if (value.post.description == null) {
     value.post.description = ""
   }
@@ -116,13 +120,13 @@ static void createEventPost(String key, Object value) {
   def googleSearchString = createGoogleSearchLink(value.post.title,
                                                          value.post.type[1],
                                                          value.post.description,
-                                                         value.post.date)
+                                                         date)
   def postContent =
     """---
 layout: post
-slug: ${key}
+slug: ${slug}
 title: ${value.post.title}  |  ${value.post.type[1]}
-date: ${value.post.date}
+date: ${date}
 description: ${value.post.description}
 image: assets/media/${key}/${value.media.picture}
 text: media/${key}/${value.media.text}
@@ -153,12 +157,13 @@ ${programString}
 
 """
 
-  def postFile = new File("./_posts/${value.post.date}-${key}.md")
+  def postFile = new File("./_posts/${key}.md")
   postFile.text = postContent
 
 }
 
-static void createBookPost(String key, Object value) {
+static void createBookPost(String key, Object value, String date, String slug) {
+
   if (value.post.description == null) {
     value.post.description = "${value.content.author} (${value.content.published})"
   }
@@ -166,9 +171,9 @@ static void createBookPost(String key, Object value) {
   def postContent =
     """---
 layout: post
-slug: ${key}
+slug: ${slug}
 title: ${value.post.title}  |  ${value.post.type[1]}
-date: ${value.post.date}
+date: ${date}
 description: ${value.post.description}
 image: assets/media/${key}/${value.media.picture}
 text: media/${key}/${value.media.text}
@@ -181,12 +186,13 @@ categories: ${value.post.categories}
 
 """
 
-  def postFile = new File("./_posts/${value.post.date}-${key}.md")
+  def postFile = new File("./_posts/${key}.md")
   postFile.text = postContent
 
 }
 
-static void createExpoPost(String key, Object value) {
+static void createExpoPost(String key, Object value, String date, String slug) {
+
   if (value.post.description == null) {
     value.post.description = "${value.content.city}"
   }
@@ -194,9 +200,9 @@ static void createExpoPost(String key, Object value) {
   def postContent =
     """---
 layout: post
-slug: ${key}
+slug: ${slug}
 title: ${value.post.title}  |  ${value.post.type[1]}
-date: ${value.post.date}
+date: ${date}
 description: ${value.post.description}
 city: ${value.city}
 image: assets/media/${key}/${value.media.picture}
@@ -215,7 +221,7 @@ categories: ${value.post.categories}
       postContent += "\n<div style=\"text-align: center;\"><i>${file.name.substring(0, file.name.lastIndexOf('.'))}</i></div>\n"
   }
 
-  def postFile = new File("./_posts/${value.post.date}-${key}.md")
+  def postFile = new File("./_posts/${key}.md")
   postFile.text = postContent
 
 }

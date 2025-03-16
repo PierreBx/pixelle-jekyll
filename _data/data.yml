@@ -1,8 +1,7 @@
-fondation-bemberg:
+2025-01-18-fondation-bemberg:
   post:
     title: Fondation Bemberg - Hôtel d'Assézat
     type: ["exhibition", "exposition"]
-    date: "2025-01-18"
     description: Fondation Bemberg
     tags: [ exposition ]
     categories: [ trips ]
@@ -12,11 +11,10 @@ fondation-bemberg:
     text: text.md
     picture: image.jpg
     pictures: pictures
-justice:
+2025-02-05-justice:
   post:
     title: Justice
     type: ["event", "performance"]
-    date: "2025-02-05"
     description: Hyperdrama Tour
     tags: [ concert ]
     categories: [ events ]
@@ -26,11 +24,10 @@ justice:
     text: text.md
     picture: image.jpg
     youtube: https://youtu.be/f13IFaVfclM?si=YRY-yHfMxP1xMOmD
-khatia-buniatishvili:
+2025-02-06-khatia-buniatishvili:
   post:
     title: Khatia Buniatishvili
     type: ["event", "récital"]
-    date: "2025-02-06"
     description: Récital piano
     tags: [ recital ]
     categories: [ events ]
@@ -50,11 +47,10 @@ khatia-buniatishvili:
     text: text.md
     pdf: livret.pdf
     picture: image.webp
-le-barbier-de-seville-revisited:
+2025-02-15-le-barbier-de-seville-revisited:
   post:
     title: Le Barbier de Séville Revisited
     type: ["event", "opéra jazz"]
-    date: "2025-02-15"
     description: Le Barbier version jazz...
     tags: [ opera ]
     categories: [ events ]
@@ -73,7 +69,7 @@ le-barbier-de-seville-revisited:
     text: text.md
     pdf: livret.pdf
     picture: image.jpg
-le-chardonneret:
+2024-09-17-le-chardonneret:
   post:
     title: Le Chardonneret
     type: ["book", "roman"]
@@ -87,11 +83,10 @@ le-chardonneret:
   media:
     text: text.md
     picture: image.jpg
-carmina-burana:
+2025-02-19-carmina-burana:
   post:
     title: Carmina Burana
     type: ["event", "choeur"]
-    date: "2025-02-19"
     description: Choeur de l'Opéra de Bordeaux (Auditorium)
     tags: [ opera ]
     categories: [ events ]
@@ -105,11 +100,10 @@ carmina-burana:
     text: text.md
     picture: image.webp
     pdf: livret.pdf
-sol-invictus:
+2025-02-21-sol-invictus:
   post:
     title: Sol Invictus
     type: ["event", "danse"]
-    date: "2025-02-21"
     description: Compagnie Hervé Koubi (Pin Galant)
     tags: [ dance ]
     categories: [ events ]
@@ -122,7 +116,7 @@ sol-invictus:
    text: text.md
    picture: image.jpg
    youtube: https://www.youtube.com/watch?v=6bD6J7SY9lg
-annie-hall:
+1985-01-17-annie-hall:
   post:
     title: Annie Hall
     type: ["movie", "film"]
@@ -139,11 +133,10 @@ annie-hall:
     picture: image.jpg
     youtube: https://youtu.be/5h5zurZsIQY?si=UBAuOLgEwbLJh03q
   link: https://en.wikipedia.org/wiki/Annie_Hall
-blue-velvet:
+2025-01-28-blue-velvet:
   post:
     title: Blue Velvet
     type: ["movie", "film"]
-    date: "2025-01-28"
     description:
     tags: [movie]
     categories: [films]
@@ -155,11 +148,10 @@ blue-velvet:
       text: text.md
       picture: image.jpeg
   link: https://en.wikipedia.org/wiki/Blue_Velvet_(film)
-gone-baby-gone:
+2025-03-03-gone-baby-gone:
     post:
       title: Gone Baby Gone
       type: ["movie", "film"]
-      date: "2025-03-03"
       description:
       tags: [ movie ]
       categories: [ films ]
@@ -171,11 +163,10 @@ gone-baby-gone:
       text: text.md
       picture: image.webp
     link: https://en.wikipedia.org/wiki/Gone_Baby_Gone
-mulholland-drive:
+2025-02-02-mulholland-drive:
   post:
     title: Mulholland Drive
     type: ["movie", "film"]
-    date: "2025-02-02"
     description:
     tags: [movie]
     categories: [films]
@@ -187,11 +178,10 @@ mulholland-drive:
     text: text.md
     picture: image.webp
   link: https://en.wikipedia.org/wiki/Mulholland_Drive_(film)
-twin-peaks:
+2025-02-15-twin-peaks:
   post:
     title: Twin Peaks
     type: ["series", "série"]
-    date: "2025-02-15"
     description:
     tags: [series]
     categories: [series]
