@@ -6,9 +6,9 @@ date: 2025-01-28
 description: David Lynch (1986)
 director: David Lynch
 releaseYear: 1986
-image: assets/media/blue-velvet/image.jpeg
-text: media/blue-velvet/text.md
-pdf: ../../assets/media/blue-velvet/null
+image: assets/media/2025-01-28-blue-velvet/image.jpeg
+text: media/2025-01-28-blue-velvet/text.md
+pdf: ../../assets/media/2025-01-28-blue-velvet/null
 tags: [movie]
 categories: [films]
 youtube: null

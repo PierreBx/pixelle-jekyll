@@ -4,9 +4,9 @@ slug: khatia-buniatishvili
 title: Khatia Buniatishvili  |  récital
 date: 2025-02-06
 description: Récital piano
-image: assets/media/khatia-buniatishvili/image.webp
-text: media/khatia-buniatishvili/text.md
-pdf: "../../assets/media/khatia-buniatishvili/livret.pdf"
+image: assets/media/2025-02-06-khatia-buniatishvili/image.webp
+text: media/2025-02-06-khatia-buniatishvili/text.md
+pdf: "../../assets/media/2025-02-06-khatia-buniatishvili/livret.pdf"
 tags: [recital]
 categories: [events]
 youtube: null

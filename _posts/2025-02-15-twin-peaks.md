@@ -6,9 +6,9 @@ date: 2025-02-15
 description: David Lynch (1990)
 creator: David Lynch
 releaseYear: 1990
-image: assets/media/twin-peaks/image.jpg
-text: media/twin-peaks/text.md
-pdf: ../../assets/media/twin-peaks/null
+image: assets/media/2025-02-15-twin-peaks/image.jpg
+text: media/2025-02-15-twin-peaks/text.md
+pdf: ../../assets/media/2025-02-15-twin-peaks/null
 tags: [series]
 categories: [series]
 youtube: null

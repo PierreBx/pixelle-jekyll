@@ -6,9 +6,9 @@ date: 1985-01-17
 description: Woody Allen (1977)
 director: Woody Allen
 releaseYear: 1977
-image: assets/media/annie-hall/image.jpg
-text: media/annie-hall/text.md
-pdf: ../../assets/media/annie-hall/null
+image: assets/media/1985-01-17-annie-hall/image.jpg
+text: media/1985-01-17-annie-hall/text.md
+pdf: ../../assets/media/1985-01-17-annie-hall/null
 tags: [movie]
 categories: [films]
 youtube: https://youtu.be/5h5zurZsIQY?si=UBAuOLgEwbLJh03q

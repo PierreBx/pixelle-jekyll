@@ -4,9 +4,9 @@ slug: carmina-burana
 title: Carmina Burana  |  choeur
 date: 2025-02-19
 description: Choeur de l'Opéra de Bordeaux (Auditorium)
-image: assets/media/carmina-burana/image.webp
-text: media/carmina-burana/text.md
-pdf: "../../assets/media/carmina-burana/livret.pdf"
+image: assets/media/2025-02-19-carmina-burana/image.webp
+text: media/2025-02-19-carmina-burana/text.md
+pdf: "../../assets/media/2025-02-19-carmina-burana/livret.pdf"
 tags: [opera]
 categories: [events]
 youtube: null

@@ -4,9 +4,9 @@ slug: le-barbier-de-seville-revisited
 title: Le Barbier de Séville Revisited  |  opéra jazz
 date: 2025-02-15
 description: Le Barbier version jazz...
-image: assets/media/le-barbier-de-seville-revisited/image.jpg
-text: media/le-barbier-de-seville-revisited/text.md
-pdf: "../../assets/media/le-barbier-de-seville-revisited/livret.pdf"
+image: assets/media/2025-02-15-le-barbier-de-seville-revisited/image.jpg
+text: media/2025-02-15-le-barbier-de-seville-revisited/text.md
+pdf: "../../assets/media/2025-02-15-le-barbier-de-seville-revisited/livret.pdf"
 tags: [opera]
 categories: [events]
 youtube: null
