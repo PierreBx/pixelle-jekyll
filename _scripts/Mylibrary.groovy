@@ -1,12 +1,19 @@
-static String addPictures(String key, String picturesDirname) {
+static String addPictures(String key, Boolean addpictures) {
 
   def result   = ""
 
-  def picturesDir = new File("assets/media/${key}/${picturesDirname}")
-  picturesDir.eachFile { file ->
-    result += "\n\n![text](${file.path})\n"
-    result += "\n<div style=\"text-align: center;\"><i>${file.name.substring(0, file.name.lastIndexOf('.'))}</i></div>\n"
+  if (addpictures) {
+    def picturesDir = new File("assets/media/${key}/pictures")
+    picturesDir.eachFile { file ->
+      result += "\n\n![text](${file.path})\n"
+      result += "\n<div style=\"text-align: center;\"><i>${file.name.substring(0, file.name.lastIndexOf('.'))}</i></div>\n"
+    }
+
+    return result
   }
+
+
+
 
   return result
 }
@@ -155,6 +162,8 @@ ${programString}
 
 {% include  {{ page.text }} %}
 
+${addPictures(key, value.media.addpictures ? true : false)}
+
 {% if page.youtube %}
   {% youtube page.youtube %}
 {% endif %}
@@ -230,7 +239,7 @@ categories: ${value.post.categories}
 
 """
 
-  postContent += addPictures(key, value.media.pictures)
+  postContent += addPictures(key, value.media.addpictures ? true : false)
 
   def postFile = new File("./_posts/${key}.md")
   postFile.text = postContent

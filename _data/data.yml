@@ -16,19 +16,20 @@
   media:
     text: text.md
     picture: image.webp
+    addpictures: yes
 2025-01-18-fondation-bemberg:
   post:
     title: Fondation Bemberg - Hôtel d'Assézat
     type: ["exhibition", "exposition"]
     description: Fondation Bemberg
-    tags: [ exposition ]
+    tags: [ exhibition ]
     categories: [ trips ]
   place: Toulouse
   content:
   media:
     text: text.md
     picture: image.jpg
-    pictures: pictures
+    addpictures: yes
 2025-02-05-justice:
   post:
     title: Justice

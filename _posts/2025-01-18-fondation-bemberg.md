@@ -7,7 +7,7 @@ description: Fondation Bemberg
 city: Toulouse
 image: assets/media/2025-01-18-fondation-bemberg/image.jpg
 text: media/2025-01-18-fondation-bemberg/text.md
-tags: [exposition]
+tags: [exhibition]
 categories: [trips]
 
 ---
