@@ -1,3 +1,21 @@
+2025-03-13-brad-mehldau:
+  post:
+    title: Brad Mehldau
+    type: ["event", "récital"]
+    description: Récital piano
+    tags: [ recital ]
+    categories: [ events ]
+  place: Auditorium
+  content:
+    - author: Auteur
+      work: Oeuvre
+    - author: G. Fauré
+      work: Nocturnes
+    - author: B. Mehldau
+      work: compositions
+  media:
+    text: text.md
+    picture: image.webp
 2025-01-18-fondation-bemberg:
   post:
     title: Fondation Bemberg - Hôtel d'Assézat

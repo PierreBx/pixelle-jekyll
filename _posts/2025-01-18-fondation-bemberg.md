@@ -4,7 +4,7 @@ slug: fondation-bemberg
 title: Fondation Bemberg - Hôtel d'Assézat  |  exposition
 date: 2025-01-18
 description: Fondation Bemberg
-city: null
+city: Toulouse
 image: assets/media/2025-01-18-fondation-bemberg/image.jpg
 text: media/2025-01-18-fondation-bemberg/text.md
 tags: [exposition]

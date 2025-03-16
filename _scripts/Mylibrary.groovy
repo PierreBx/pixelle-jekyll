@@ -1,3 +1,16 @@
+static String addPictures(String key, String picturesDirname) {
+
+  def result   = ""
+
+  def picturesDir = new File("assets/media/${key}/${picturesDirname}")
+  picturesDir.eachFile { file ->
+    result += "\n\n![text](${file.path})\n"
+    result += "\n<div style=\"text-align: center;\"><i>${file.name.substring(0, file.name.lastIndexOf('.'))}</i></div>\n"
+  }
+
+  return result
+}
+
 static String fixLength(String input, int length) {
   input.padRight(length).substring(0, length)
 }
@@ -121,6 +134,7 @@ static void createEventPost(String key, Object value, String date, String slug) 
                                                          value.post.type[1],
                                                          value.post.description,
                                                          date)
+
   def postContent =
     """---
 layout: post
@@ -204,7 +218,7 @@ slug: ${slug}
 title: ${value.post.title}  |  ${value.post.type[1]}
 date: ${date}
 description: ${value.post.description}
-city: ${value.city}
+city: ${value.place}
 image: assets/media/${key}/${value.media.picture}
 text: media/${key}/${value.media.text}
 tags: ${value.post.tags}
@@ -215,11 +229,8 @@ categories: ${value.post.categories}
 {% include  {{ page.text }} %}
 
 """
-  def picturesDir = new File("assets/media/${key}/${value.media.pictures}")
-  picturesDir.eachFile { file ->
-    postContent += "\n\n![text](${file.path})\n"
-      postContent += "\n<div style=\"text-align: center;\"><i>${file.name.substring(0, file.name.lastIndexOf('.'))}</i></div>\n"
-  }
+
+  postContent += addPictures(key, value.media.pictures)
 
   def postFile = new File("./_posts/${key}.md")
   postFile.text = postContent
