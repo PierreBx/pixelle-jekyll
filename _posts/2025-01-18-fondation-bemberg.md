@@ -26,6 +26,6 @@ categories: [trips]
 <div style="text-align: center;"><i>Fantin-Latour - Portait de Fantin - 1860</i></div>
 
 
-![text](assets/media/2025-01-18-fondation-bemberg/pictures/Caillebotte - Le Petit Bras  de la Seine en Automne - 1890.webp)
+![text](assets/media/2025-01-18-fondation-bemberg/pictures/Caillebotte - Le Petit Bras de la Seine en Automne - 1890.webp)
 
-<div style="text-align: center;"><i>Caillebotte - Le Petit Bras  de la Seine en Automne - 1890</i></div>
+<div style="text-align: center;"><i>Caillebotte - Le Petit Bras de la Seine en Automne - 1890</i></div>
