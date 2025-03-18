@@ -196,13 +196,17 @@ static void createEventPost(String key, Object value, String date, String slug) 
                                                          value.post.description,
                                                          date)
 
+  def description =
+     value.post.description.size() != 0 ? value.post.description
+                                        : "${value.author} (${value.place})"
+
   def postContent =
     """---
 layout: post
 slug: ${slug}
 title: ${value.post.title}  |  ${value.post.type[1]}
 date: ${date}
-description: ${value.post.description}
+description: ${description}
 image: assets/media/${key}/${value.media.picture}
 text: media/${key}/${value.media.text}
 pdf: "../../assets/media/${key}/${value.media.pdf}"

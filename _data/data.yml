@@ -1,8 +1,28 @@
+2025-03-15-sans-tambour:
+  post:
+    title: Sans Tambour
+    type: ["event", "théâtre"]
+    description:
+    tags: [ theater ]
+    categories: [ events ]
+  place: TnBA
+  author: Samuel Achache
+  content:
+    - name: musique
+      author: auteur
+    - name: Liederkreis, op. 39
+      author: R. Schumann
+  media:
+    text: text.md
+    pdf: livret.pdf
+    picture: image.png
+    addpictures: yes
+    youtube: https://www.youtube.com/watch?v=dvJVBgT1BFs
 2025-03-13-brad-mehldau:
   post:
     title: Brad Mehldau
     type: ["event", "récital"]
-    description: Récital piano
+    description: Récital piano (Auditorium)
     tags: [ recital ]
     categories: [ events ]
   place: Auditorium

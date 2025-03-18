@@ -3,7 +3,7 @@ layout: post
 slug: brad-mehldau
 title: Brad Mehldau  |  récital
 date: 2025-03-13
-description: Récital piano
+description: Récital piano (Auditorium)
 image: assets/media/2025-03-13-brad-mehldau/image.webp
 text: media/2025-03-13-brad-mehldau/text.md
 pdf: "../../assets/media/2025-03-13-brad-mehldau/null"
@@ -33,6 +33,6 @@ youtube: null
 ---
 
 <div>
-    <p style="text-align: left;"> <a href="https://www.google.com/search?q=Brad+Mehldau+récital+Récital+piano+2025-03-13" target="_blank">Google it</a> </p>
+    <p style="text-align: left;"> <a href="https://www.google.com/search?q=Brad+Mehldau+récital+Récital+piano+(Auditorium)+2025-03-13" target="_blank">Google it</a> </p>
 </div>
 
