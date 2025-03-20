@@ -37,37 +37,43 @@
     text: text.md
     picture: image.webp
     addpictures: yes
-2025-01-18-fondation-bemberg:
+2025-03-03-gone-baby-gone:
   post:
-    title: Fondation Bemberg - Hôtel d'Assézat
-    type: ["exhibition", "exposition"]
-    description: Fondation Bemberg
-    tags: [ exhibition ]
-    categories: [ trips ]
-  place: Toulouse
+    title: Gone Baby Gone
+    type: ["movie", "film"]
+    description:
+    tags: [ movie ]
+    categories: [ films ]
   content:
+    title: Gone Baby Gone
+    director: Ben Affleck
+    releaseYear: 2007
   media:
     text: text.md
-    picture: image.jpg
-    addpictures: yes
-  map:
-    display: yes
-    markers:
-      - text: Hôtel d'Assézat
-        coordinates: [43.6002806652585, 1.4421788072331159]
-2025-02-05-justice:
+    picture: image.webp
+  link: https://en.wikipedia.org/wiki/Gone_Baby_Gone
+2025-02-15-le-barbier-de-seville-revisited:
   post:
-    title: Justice
-    type: ["event", "performance"]
-    description: Hyperdrama Tour
-    tags: [ concert ]
+    title: Le Barbier de Séville Revisited
+    type: ["event", "opéra jazz"]
+    description: Le Barbier version jazz...
+    tags: [ opera ]
     categories: [ events ]
-  place: Arkéa Aréna
+  place: Auditorium
   content:
+    - name: inspiré de
+      type: type
+      author: auteur
+    - name: Le Barbier de Séville
+      type: Opéra
+      author: Gioacchino Rossini
+    - name: Cyrano de Bergerac
+      type: pièce de théâtre
+      author: Edmond Rostand
   media:
     text: text.md
+    pdf: livret.pdf
     picture: image.jpg
-    youtube: https://youtu.be/f13IFaVfclM?si=YRY-yHfMxP1xMOmD
 2025-02-06-khatia-buniatishvili:
   post:
     title: Khatia Buniatishvili
@@ -91,42 +97,35 @@
     text: text.md
     pdf: livret.pdf
     picture: image.webp
-2025-02-15-le-barbier-de-seville-revisited:
+2025-02-05-justice:
   post:
-    title: Le Barbier de Séville Revisited
-    type: ["event", "opéra jazz"]
-    description: Le Barbier version jazz...
-    tags: [ opera ]
+    title: Justice
+    type: ["event", "performance"]
+    description: Hyperdrama Tour
+    tags: [ concert ]
     categories: [ events ]
-  place: Auditorium
+  place: Arkéa Aréna
   content:
-    - name: inspiré de
-      type: type
-      author: auteur
-    - name: Le Barbier de Séville
-      type: Opéra
-      author: Gioacchino Rossini
-    - name: Cyrano de Bergerac
-      type: pièce de théâtre
-      author: Edmond Rostand
   media:
     text: text.md
-    pdf: livret.pdf
     picture: image.jpg
-2024-09-17-le-chardonneret:
+    youtube: https://youtu.be/f13IFaVfclM?si=YRY-yHfMxP1xMOmD
+2025-02-21-sol-invictus:
   post:
-    title: Le Chardonneret
-    type: ["book", "roman"]
-    date: "2024-09-17"
-    description:
-    tags: [ book ]
-    categories: [ books ]
+    title: Sol Invictus
+    type: ["event", "danse"]
+    description: Compagnie Hervé Koubi (Pin Galant)
+    tags: [ dance ]
+    categories: [ events ]
+  place: Pin Galant
   content:
-    author: Donna Tartt
-    published: 2013
+    - name: Sol Invictus
+      type: danse contemporaine
+      author: Hervé Koubi
   media:
     text: text.md
     picture: image.jpg
+    youtube: https://www.youtube.com/watch?v=6bD6J7SY9lg
 2025-02-19-carmina-burana:
   post:
     title: Carmina Burana
@@ -144,22 +143,101 @@
     text: text.md
     picture: image.webp
     pdf: livret.pdf
-2025-02-21-sol-invictus:
+2025-02-15-twin-peaks:
   post:
-    title: Sol Invictus
-    type: ["event", "danse"]
-    description: Compagnie Hervé Koubi (Pin Galant)
-    tags: [ dance ]
-    categories: [ events ]
-  place: Pin Galant
+    title: Twin Peaks
+    type: ["series", "série"]
+    description:
+    tags: [series]
+    categories: [series]
   content:
-    - name: Sol Invictus
-      type: danse contemporaine
-      author: Hervé Koubi
+    title: Twin Peaks
+    creator: David Lynch
+    releaseYear: 1990
   media:
-   text: text.md
-   picture: image.jpg
-   youtube: https://www.youtube.com/watch?v=6bD6J7SY9lg
+    text: text.md
+    picture: image.jpg
+  link: https://en.wikipedia.org/wiki/Twin_Peaks
+2025-02-02-mulholland-drive:
+  post:
+    title: Mulholland Drive
+    type: ["movie", "film"]
+    description:
+    tags: [movie]
+    categories: [films]
+  content:
+    title: Mulholland Drive
+    director: David Lynch
+    releaseYear: 2001
+  media:
+    text: text.md
+    picture: image.webp
+  link: https://en.wikipedia.org/wiki/Mulholland_Drive_(film)
+2025-01-28-blue-velvet:
+  post:
+    title: Blue Velvet
+    type: ["movie", "film"]
+    description:
+    tags: [movie]
+    categories: [films]
+  content:
+    title: Blue Velvet
+    director: David Lynch
+    releaseYear: 1986
+  media:
+    text: text.md
+    picture: image.jpeg
+  link: https://en.wikipedia.org/wiki/Blue_Velvet_(film)
+2025-01-18-eva-jospin:
+  post:
+    title: Eva Jospin - Chapelle de la Grave
+    type: ["exhibition", "exposition"]
+    description: Exposition
+    tags: [ exhibition ]
+    categories: [ trips ]
+  place: Toulouse
+  content:
+  media:
+    text: text.md
+    picture: image.jpg
+    addpictures: yes
+  map:
+    display: yes
+    markers:
+      - text: Chapelle de la Grave
+        coordinates: [43.60098884509048, 1.4329312111961556]
+2025-01-18-fondation-bemberg:
+  post:
+    title: Fondation Bemberg - Hôtel d'Assézat
+    type: ["exhibition", "exposition"]
+    description: Fondation Bemberg
+    tags: [ exhibition ]
+    categories: [ trips ]
+  place: Toulouse
+  content:
+  media:
+    text: text.md
+    picture: image.jpg
+    addpictures: yes
+  map:
+    display: yes
+    markers:
+      - text: Hôtel d'Assézat
+        coordinates: [43.6002806652585, 1.4421788072331159]
+2024-09-17-le-chardonneret:
+  post:
+    title: Le Chardonneret
+    type: ["book", "roman"]
+    date: "2024-09-17"
+    description:
+    tags: [ book ]
+    categories: [ books ]
+  content:
+    author: Donna Tartt
+    published: 2013
+  media:
+    text: text.md
+    picture: image.jpg
 1985-01-17-annie-hall:
   post:
     title: Annie Hall
@@ -177,63 +255,3 @@
     picture: image.jpg
     youtube: https://youtu.be/5h5zurZsIQY?si=UBAuOLgEwbLJh03q
   link: https://en.wikipedia.org/wiki/Annie_Hall
-2025-01-28-blue-velvet:
-  post:
-    title: Blue Velvet
-    type: ["movie", "film"]
-    description:
-    tags: [movie]
-    categories: [films]
-  content:
-    title: Blue Velvet
-    director: David Lynch
-    releaseYear: 1986
-  media:
-      text: text.md
-      picture: image.jpeg
-  link: https://en.wikipedia.org/wiki/Blue_Velvet_(film)
-2025-03-03-gone-baby-gone:
-    post:
-      title: Gone Baby Gone
-      type: ["movie", "film"]
-      description:
-      tags: [ movie ]
-      categories: [ films ]
-    content:
-      title: Gone Baby Gone
-      director: Ben Affleck
-      releaseYear: 2007
-    media:
-      text: text.md
-      picture: image.webp
-    link: https://en.wikipedia.org/wiki/Gone_Baby_Gone
-2025-02-02-mulholland-drive:
-  post:
-    title: Mulholland Drive
-    type: ["movie", "film"]
-    description:
-    tags: [movie]
-    categories: [films]
-  content:
-    title: Mulholland Drive
-    director: David Lynch
-    releaseYear: 2001
-  media:
-    text: text.md
-    picture: image.webp
-  link: https://en.wikipedia.org/wiki/Mulholland_Drive_(film)
-2025-02-15-twin-peaks:
-  post:
-    title: Twin Peaks
-    type: ["series", "série"]
-    description:
-    tags: [series]
-    categories: [series]
-  content:
-    title: Twin Peaks
-    creator: David Lynch
-    releaseYear: 1990
-  media:
-    text: text.md
-    picture: image.jpg
-  link: https://en.wikipedia.org/wiki/Twin_Peaks
