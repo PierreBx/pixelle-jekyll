@@ -1,0 +1,9 @@
+---
+---
+@import "jekyll-theme-chirpy";
+
+
+#map {
+  width: 100%;
+  height: 300px;
+}
