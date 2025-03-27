@@ -1,3 +1,25 @@
+2025-03-25-duo-geister:
+  post:
+    title: Duo Geister
+    type: ["event", "récital"]
+    description: Récital piano (Auditorium)
+    tags: [ recital ]
+    categories: [ events ]
+  place: Auditorium
+  content:
+    - author: Auteur
+      work: Oeuvre
+    - author: F. Schubert
+      work: Divertissement à la hongroise D 818
+    - author: F. Schubert
+      work: Sonate en si bémol D 617
+    - author: F. Schubert
+      work: Fantaisie D 940
+  media:
+    text: text.md
+    picture: image.webp
+    pdf: livret.pdf
+    addpictures: no
 2025-03-15-sans-tambour:
   post:
     title: Sans Tambour
