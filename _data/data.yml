@@ -1,3 +1,16 @@
+2025-03-28-miki:
+  post:
+    title: Miki
+    type: ["event", "concert"]
+    description: Miki
+    tags: [ concert ]
+    categories: [ events ]
+  place: Le Rocher de Palmer
+  content:
+  media:
+    text: text.md
+    picture: image.jpg
+    youtube: https://www.youtube.com/watch?v=JW2ZqqCcTwc&t=4s
 2025-03-25-duo-geister:
   post:
     title: Duo Geister
