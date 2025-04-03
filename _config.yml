@@ -182,10 +182,15 @@ collections:
     output: true
     sort_by: date
     permalink: :collection/:title
+  athenaze:
+    output: true
+    sort_by: date
+    permalink: :collection/:title
   vocabulary:
     output: true
     sort_by: date
     permalink: :collection/:title
+
 
 defaults:
   - scope:
