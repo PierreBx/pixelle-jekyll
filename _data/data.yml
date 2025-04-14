@@ -1,3 +1,27 @@
+2025-04-12-4-tendances:
+  post:
+    title: 4 Tendances
+    type: ["event", "danse"]
+    description: 10ème édition (Grand-Théâtre)
+    tags: [ dance ]
+    categories: [ events ]
+  place: Grand-Théâtre
+  content:
+    - name: oeuvre
+      chorégraphe: chorégraphe
+    - name: Beauties and Beasts
+      chorégraphe: Xenia Wiest
+    - name: Obsidian Tear
+      chorégraphe: Wayne McGregor
+    - name: Between Worlds
+      chorégraphe: Ana Isabel Casquilho
+    - name: Sleight of Hand
+      chorégraphe: Sol León & Paul Lightfoot
+  media:
+    text: text.md
+    picture: image.webp
+    addpictures: yes
+    pdf: livret.pdf
 2025-03-28-miki:
   post:
     title: Miki
