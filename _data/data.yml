@@ -1,3 +1,15 @@
+2025-04-26-pene-pati:
+  post:
+    title: Pene Pati
+    type: ["event", "récital"]
+    description: Récital
+    tags: [ recital ]
+    categories: [ events ]
+  place: Grand-Théâtre
+  media:
+    text: text.md
+    pdf: livret.pdf
+    picture: image.webp
 2025-04-12-4-tendances:
   post:
     title: 4 Tendances
