@@ -6,12 +6,15 @@ static String addPictures(String key, Boolean addpictures) {
 
   if (addpictures) {
     def picturesDir = new File("assets/media/${key}/pictures")
-    picturesDir.eachFile { file ->
+    def files = picturesDir.listFiles().sort { it.name }
+    files.each { file ->
       result += "\n\n![text](${file.path})\n"
       def caption = file.name.substring(0, file.name.lastIndexOf('.'))
       if (caption[0] != '(') { // title of the file in parenthesis => do not display
         result += "\n<div style=\"text-align: center;\"><i>${caption}</i></div>\n"
       }
+        result += "\n<br><br>\n"
+
     }
 
     return result

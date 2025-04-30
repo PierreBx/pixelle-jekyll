@@ -16,19 +16,25 @@ categories: [trips]
 
 
 
+![text](assets/media/2025-01-18-eva-jospin/pictures/image1.jpg)
+
+<div style="text-align: center;"><i>image1</i></div>
+
+<br><br>
+
+
 ![text](assets/media/2025-01-18-eva-jospin/pictures/image2.jpg)
 
 <div style="text-align: center;"><i>image2</i></div>
+
+<br><br>
 
 
 ![text](assets/media/2025-01-18-eva-jospin/pictures/image3.jpg)
 
 <div style="text-align: center;"><i>image3</i></div>
 
-
-![text](assets/media/2025-01-18-eva-jospin/pictures/image1.jpg)
-
-<div style="text-align: center;"><i>image1</i></div>
+<br><br>
 
 
 <div id="map" style="height: 400px;"></div>

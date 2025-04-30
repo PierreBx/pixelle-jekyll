@@ -16,19 +16,25 @@ categories: [trips]
 
 
 
-![text](assets/media/2025-01-18-fondation-bemberg/pictures/Renoir - La Loge - 1879.jpg)
+![text](assets/media/2025-01-18-fondation-bemberg/pictures/Caillebotte - Le Petit Bras de la Seine en Automne - 1890.webp)
 
-<div style="text-align: center;"><i>Renoir - La Loge - 1879</i></div>
+<div style="text-align: center;"><i>Caillebotte - Le Petit Bras de la Seine en Automne - 1890</i></div>
+
+<br><br>
 
 
 ![text](assets/media/2025-01-18-fondation-bemberg/pictures/Fantin-Latour - Portait de Fantin - 1860.jpg)
 
 <div style="text-align: center;"><i>Fantin-Latour - Portait de Fantin - 1860</i></div>
 
+<br><br>
 
-![text](assets/media/2025-01-18-fondation-bemberg/pictures/Caillebotte - Le Petit Bras de la Seine en Automne - 1890.webp)
 
-<div style="text-align: center;"><i>Caillebotte - Le Petit Bras de la Seine en Automne - 1890</i></div>
+![text](assets/media/2025-01-18-fondation-bemberg/pictures/Renoir - La Loge - 1879.jpg)
+
+<div style="text-align: center;"><i>Renoir - La Loge - 1879</i></div>
+
+<br><br>
 
 
 <div id="map" style="height: 400px;"></div>

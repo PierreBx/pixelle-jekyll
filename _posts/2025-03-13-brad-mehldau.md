@@ -21,6 +21,8 @@ youtube: null
 
 ![text](assets/media/2025-03-13-brad-mehldau/pictures/(affiche).jpg)
 
+<br><br>
+
 
 {% if page.youtube %}
   {% youtube page.youtube %}

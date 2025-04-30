@@ -265,6 +265,24 @@
     markers:
       - text: Chapelle de la Grave
         coordinates: [43.60098884509048, 1.4329312111961556]
+2025-01-18-les-abattoirs:
+  post:
+    title: Ouvrir les yeux - Collection photographique - Les Abattoirs
+    type: ["exhibition", "exposition"]
+    description: Exposition
+    tags: [ exhibition ]
+    categories: [ trips ]
+  place: Toulouse
+  content:
+  media:
+    text: text.md
+    picture: image.webp
+    addpictures: yes
+  map:
+    display: yes
+    markers:
+      - text: Les Abattoirs
+        coordinates: [43.601299259601284, 1.4294525993951106]
 2025-01-18-fondation-bemberg:
   post:
     title: Fondation Bemberg - Hôtel d'Assézat
