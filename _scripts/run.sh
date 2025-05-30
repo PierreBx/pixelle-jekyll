@@ -17,11 +17,14 @@ cp -ru ./_data/media ./assets/
 cp -ru ./_data/media ./_includes/
 green_text done!
 
-echo creating posts...
+echo creating posts from yaml database...
 groovy ./_scripts/create_posts.groovy
 
 echo creating vocabulary entries...
 groovy ./_scripts/create-voc-posts.groovy
+
+echo creating posts from Grist Blog table...
+groovy ./_scripts/create-grist-posts.groovy
 
 
 echo "end of run.sh successfully!"
