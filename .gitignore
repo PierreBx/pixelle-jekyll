@@ -26,12 +26,4 @@ package-lock.json
 _sass/vendors
 assets/js/dist
 
-# Ignore Gradle project-specific cache directory
-.gradle
 
-# Ignore Gradle build output directory
-build
-/grist_data/docs/rt3QMc825NvK9dQCtjHfZt.grist
-/grist_data/home.sqlite3
-/grist_data/grist-sessions.db
-/grist_data/docs/6srfLsUFqJADJ99pzCvaP8.grist

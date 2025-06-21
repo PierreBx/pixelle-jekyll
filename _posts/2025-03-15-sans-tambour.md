@@ -13,7 +13,10 @@ youtube: https://www.youtube.com/watch?v=dvJVBgT1BFs
 
 ---
 
-**Programme** | musique || auteur || Liederkreis, op. 39 || R. Schumann |
+**Programme** 
+
+| musique || auteur |
+| Liederkreis, op. 39 || Robert Schumann |
 
 {% include  {{ page.text }} %}
 

@@ -1,6 +1,7 @@
 #!/bin/bash
 
-PIXL_LOCAL_URL=http://127.0.0.1:4000/pixelle02/
+#PIXL_LOCAL_URL=http://127.0.0.1:4000/pixelle02/
+PIXL_LOCAL_URL=http://0.0.0.0:4000/pixelle/
 
 green_text() {
     echo -e "\e[32m$1\e[0m"
