@@ -99,9 +99,9 @@ def writePostFile(Map record, CONFIG) {
   Collection types = type.split("\\|")
   String typePost = types[0] // eg. event => façon avec laquelle le post est décrit
   String typeEvent = types[1] // eg. opéra => 1ère ligne 2de place
-  Collection tagCollection = (fields.post_tags ?: "unclassified").split("\\|")
+  Collection tagCollection = (fields.post_m_tags ?: "unclassified").split("\\|")
   String tags = "[ " + tagCollection.join(", ") + " ]"
-  String category = "[ " + (fields.post_category ?: "uncategorized") + " ]"
+  String category = "[ " + (fields.post_m_category ?: "uncategorized") + " ]"
   String description = fields.post_description ?: ""
   String content = fields.post_text ?: ""
   println(name)
