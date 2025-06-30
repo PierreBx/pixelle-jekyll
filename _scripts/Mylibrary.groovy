@@ -1,4 +1,12 @@
 import com.sun.imageio.plugins.common.SimpleRenderedImage
+@Grab(group='org.codehaus.groovy.modules.http-builder', module='http-builder', version='0.7.1')
+
+import groovyx.net.http.*
+import static groovyx.net.http.ContentType.*
+import static groovyx.net.http.Method.*
+
+
+
 
 static String addPictures(String key, Boolean addpictures) {
 
@@ -66,7 +74,7 @@ static String createGoogleSearchLink(Object... keywords) {
   return "<a href=\"${url}\" target=\"_blank\">Google it</a>"
 }
 
-void greenText(String text) {
+static void greenText(String text) {
     println ("\u001B[32m${text}\u001B[0m")
   }
 

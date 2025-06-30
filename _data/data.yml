@@ -327,20 +327,3 @@
   media:
     text: text.md
     picture: image.jpg
-1985-01-17-annie-hall:
-  post:
-    title: Annie Hall
-    type: ["movie", "film"]
-    date: "1985-01-17"
-    description:
-    tags: [movie]
-    categories: [films]
-  content:
-    title: Annie Hall
-    director: Woody Allen
-    releaseYear: 1977
-  media:
-    text: text.md
-    picture: image.jpg
-    youtube: https://youtu.be/5h5zurZsIQY?si=UBAuOLgEwbLJh03q
-  link: https://en.wikipedia.org/wiki/Annie_Hall
