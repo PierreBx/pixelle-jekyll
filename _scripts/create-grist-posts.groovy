@@ -44,13 +44,13 @@ String slugify(String str) {
 }
 
 File downloadAttachmentFromGrist(int attachmentId, String fileName, File imageDir, CONFIG) {
+
   docId = CONFIG['docId']
   apiKey = CONFIG['apiKey']
 
-
   File imageFile = new File(imageDir, fileName)
 
-  println "⬇ Downloading image: ${fileName}"
+  println "⬇ Downloading image: ${fileName} into ${imageDir}"
   def url = "${CONFIG['baseUrl']}/${docId}/attachments/${attachmentId}/download"
   def connection = new URL(url).openConnection()
   connection.setRequestProperty("Authorization", "Bearer ${apiKey}")
@@ -126,13 +126,10 @@ static def  fetchUniqueKeyFromGristTable(String tableId, String key, String valu
   String baseURL = CONFIG['baseUrl'] as String
   String docId = CONFIG['docId'] as String
   String apiKey = CONFIG['apiKey'] as String
-  def String url = ""
-  String filter = ""
 
-
-  filter = "{ \"${key}\": [ \"${value}\" ] } "
+  String filter = "{ \"${key}\": [ \"${value}\" ] } "
   def urlEncodedFilter = URLEncoder.encode(filter, "UTF-8")
-  url = "${baseURL}/${docId}/tables/${tableId}/records?filter=${urlEncodedFilter}"
+  String url = "${baseURL}/${docId}/tables/${tableId}/records?filter=${urlEncodedFilter}"
 
 
   println("filter: ${filter}")
@@ -140,10 +137,13 @@ static def  fetchUniqueKeyFromGristTable(String tableId, String key, String valu
 
   def connection = new URL(url).openConnection()
   connection.setRequestProperty("Authorization", "Bearer ${apiKey}")
+
   def json = new JsonSlurper().parse(connection.inputStream)
   println("json returned: ${json.records}")
   println("json returned class: ${json.records.class}")
-  return json.records
+  println("json returned object: ${json.records[0].fields}")
+
+  return json.records[0].fields
 }
 
 def writeMoviePost(Map record, CONFIG) {
@@ -152,17 +152,10 @@ def writeMoviePost(Map record, CONFIG) {
   String name = movie.Name ?: "untitled"
   String slug = slugify(name)
   String director = movie.GetDirector ?: ""
-  //String actors = movie.GetActorss ?: ""
-  String releaseYear = movie.YearReleased ? getYearFromUnix(movie.YearReleased) : ""
-  //String directorJson = fetchUniqueKeyFromGristTable('People', 'FirstName', 'Woody',  CONFIG)
-  //println("DirectorJson: ${directorJson}")
-  //println("movie.Director: ${movie.Director}")
-  directorJson2 = fetchUniqueKeyFromGristTable('People', 'PeopleID', "${movie.Director}",  CONFIG)
-  println("DirectorJson2: ${directorJson2}")
-  println("DirectorJson2 class: ${directorJson2.class}")
 
-  directorName = directorJson2[0].fields.LastName
-  println("DirectorName: ${directorName}")
+  String releaseYear = movie.YearReleased ? getYearFromUnix(movie.YearReleased) : ""
+  directorName = fetchUniqueKeyFromGristTable('People', 'PeopleID', "${movie.Director}",  CONFIG)
+
   String tags = "[ movie ]"
   String category = "[ films ]"
   String title = "${name} | film"
@@ -214,6 +207,14 @@ categories: ${category}
 ---
 
 "${text}"
+
+
+
+{% if page.youtube %}
+  {% youtube page.youtube %}
+{% endif %}
+
+
 
 
 """

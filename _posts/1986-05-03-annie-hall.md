@@ -23,3 +23,10 @@ Alvy attempts a return to dating, but the effort is marred by neurosis and an un
 The last meeting between Annie and Alvy takes place on Manhattan's Upper West Side after they have both moved on to someone new. Alvy's voice returns with the summation that though relationships are irrational, crazy, and absurd, we just need to have them. Annie sings "Seems Like Old Times"."
 
 
+
+{% if page.youtube %}
+  {% youtube page.youtube %}
+{% endif %}
+
+
+
