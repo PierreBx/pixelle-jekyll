@@ -1,4 +1,4 @@
-# Pixelle Jekyll structure
+# Pixelle Jekyll module
 
 ## data folder (_data)
 
