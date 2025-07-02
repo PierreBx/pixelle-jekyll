@@ -18,8 +18,8 @@ CONFIG = [
   imagesDir : new File("assets/media")
 ]
 
-
 // === SETUP ===
+
 CONFIG['postsDir'].mkdirs()
 CONFIG['imagesDir'].mkdirs()
 
@@ -35,7 +35,6 @@ String getYearFromUnix(long unixTimestamp) {
   def date = new Date(unixTimestamp * 1000)  // Java expects milliseconds
   return date.format("yyyy")  // Return year in YYYY format
 }
-
 
 String slugify(String str) {
   StringUtils.stripAccents(str).toLowerCase()
@@ -107,7 +106,6 @@ String GetAttachmentNameFromGrist(int attachmentId, CONFIG) {
   return imageName
 }
 
-
 static def fetchGristRecords(CONFIG) {
   String baseURL = CONFIG['baseUrl'] as String
   String docId = CONFIG['docId'] as String
@@ -121,7 +119,7 @@ static def fetchGristRecords(CONFIG) {
   return json.records
 }
 
-static def  fetchUniqueKeyFromGristTable(String tableId, String key, String value,  CONFIG) {
+static def fetchUniqueKeyFromGristTable(String tableId, String key, String value,  CONFIG) {
   println("fetching ${tableId} ${key} ${value}  ")
   String baseURL = CONFIG['baseUrl'] as String
   String docId = CONFIG['docId'] as String
@@ -182,6 +180,8 @@ def writeMoviePost(Map record, CONFIG) {
 
   // === GALLERY IMAGES ===
 
+  def String gallery = mylib.addPictures(imageDir.toString(), true)
+
   galleryAttachments = movie.Gallery ?: []
   galleryAttachments.eachWithIndex { galleryAttachmentId, idx ->
     if (idx > 0) {
@@ -206,8 +206,9 @@ categories: ${category}
 
 ---
 
-"${text}"
+${text}
 
+${gallery}
 
 
 {% if page.youtube %}
@@ -223,6 +224,19 @@ categories: ${category}
   }
 
 }
+
+// === LOAD LIBRARY ===
+
+print("   loading library...")
+class FunctionLoader {
+  static def loadFunctions(String filePath) {
+    def script = new GroovyShell().parse(new File(filePath))
+    return script
+  }
+}
+ mylib = FunctionLoader.loadFunctions("_scripts/Mylibrary.groovy")
+mylib.greenText("done!")
+
 
 
 // === MAIN EXECUTION ===

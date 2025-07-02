@@ -10,7 +10,7 @@ categories: [ films ]
 
 ---
 
-"Opening Night is a 1977 American psychological drama film written and directed by John Cassavetes, and starring Gena Rowlands, Ben Gazzara, Joan Blondell, Paul Stewart, Zohra Lampert, and Cassavetes. Its plot follows a stage actress who, after witnessing the accidental death of a fan, struggles through a nervous breakdown while she prepares for an upcoming Broadway premiere.
+Opening Night is a 1977 American psychological drama film written and directed by John Cassavetes, and starring Gena Rowlands, Ben Gazzara, Joan Blondell, Paul Stewart, Zohra Lampert, and Cassavetes. Its plot follows a stage actress who, after witnessing the accidental death of a fan, struggles through a nervous breakdown while she prepares for an upcoming Broadway premiere.
 
 Though set in Connecticut and New York City, Opening Night was shot on location in Los Angeles and Pasadena, California, with the theatrical performance sequences taking place at the Pasadena Civic Auditorium.
 
@@ -23,13 +23,36 @@ Myrtle's state of mind continues to deteriorate, and she begins to drink heavily
 
 Myrtle fails to show up on time for her call on opening night. When she finally arrives, Myrtle is so drunk that she can barely stand. With the audience growing restless, director Manny Victor demands the show go on. Myrtle struggles through the show's opening scenes, collapsing before her entrance and again on stage. As the show continues, Myrtle finds something of a rhythm. By the end, she and Maurice go off script and improvise the play's final act, to the producers' chagrin and the audience's rapturous applause.
 
-"
+
+
+
+
+![text](assets/media/1992-07-05-opening-night/gallery-images.jpg)
+
+<div style="text-align: center;"><i>gallery-images</i></div>
+
+<br><br>
+
+
+![text](assets/media/1992-07-05-opening-night/gallery-opening-night-1977.webp)
+
+<div style="text-align: center;"><i>gallery-opening-night-1977</i></div>
+
+<br><br>
+
+
+![text](assets/media/1992-07-05-opening-night/main-opening_night.webp)
+
+<div style="text-align: center;"><i>main-opening_night</i></div>
+
+<br><br>
 
 
 
 {% if page.youtube %}
   {% youtube page.youtube %}
 {% endif %}
+
 
 
 
