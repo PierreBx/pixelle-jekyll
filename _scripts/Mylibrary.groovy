@@ -8,12 +8,12 @@ import static groovyx.net.http.Method.*
 
 
 
-static String addPictures(String key, Boolean addpictures) {
+static String addPictures(String imagedir, Boolean addpictures) {
 
   def result   = ""
 
   if (addpictures) {
-    def picturesDir = new File("assets/media/${key}/pictures")
+    def picturesDir = new File(imagedir)
     def files = picturesDir.listFiles().sort { it.name }
     files.each { file ->
       result += "\n\n![text](${file.path})\n"
