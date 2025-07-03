@@ -15,7 +15,7 @@ CONFIG = [
   tableId  : 'Blog_films',
   baseUrl  : "http://localhost:8484/api/docs",
   postsDir : new File("_posts"),
-  imagesDir : new File("assets/media")
+  imagesDir: new File("assets/media")
 ]
 
 // === SETUP ===
@@ -62,27 +62,6 @@ File downloadAttachmentFromGrist(int attachmentId, String fileName, File imageDi
   return imageFile
 }
 
-String GetPeopleNameFromId(int peopleId, CONFIG) {
-  docId = CONFIG['docId']
-  apiKey = CONFIG['apiKey']
-
-
-  println "⬇ Retrieving people name for id: ${peopleId}"
-  def url = "${CONFIG['baseUrl']}/${docId}/attachments/${attachmentId}"
-  def connection = new URL(url).openConnection()
-  connection.setRequestProperty("Authorization", "Bearer ${apiKey}")
-
-
-  // Parse the response from the API
-  def jsonResponse = new JsonSlurper().parse(connection.inputStream)
-  //println(jsonResponse)
-
-  // Extract the image name
-  def imageName = jsonResponse.fileName
-
-  println "✅ Image name retrieved: ${imageName}"
-  return imageName
-}
 
 String GetAttachmentNameFromGrist(int attachmentId, CONFIG) {
   docId = CONFIG['docId']
@@ -119,7 +98,7 @@ static def fetchGristRecords(CONFIG) {
   return json.records
 }
 
-static def fetchUniqueKeyFromGristTable(String tableId, String key, String value,  CONFIG) {
+static def fetchUniqueKeyFromGristTable(String tableId, String key, String value, CONFIG) {
   println("fetching ${tableId} ${key} ${value}  ")
   String baseURL = CONFIG['baseUrl'] as String
   String docId = CONFIG['docId'] as String
@@ -145,42 +124,58 @@ static def fetchUniqueKeyFromGristTable(String tableId, String key, String value
 }
 
 def writeMoviePost(Map record, CONFIG) {
+
   movie = record.fields
-  String date = movie.PostDate ? formatTimestamp(movie.PostDate) : "1972-03-07"
+
+  // ===  FRONT MATTER VARIABLES  ===
+
+  // layout
+  String front_layout = "post"
+
+  // date
+  String front_date = movie.PostDate ? formatTimestamp(movie.PostDate) : "1972-03-07"
+
+  // slug
   String name = movie.Name ?: "untitled"
-  String slug = slugify(name)
-  String director = movie.GetDirector ?: ""
+  String front_slug = slugify(name)
 
+  // title
+  String front_title = "${name} | film"
+
+  // description
   String releaseYear = movie.YearReleased ? getYearFromUnix(movie.YearReleased) : ""
-  directorName = fetchUniqueKeyFromGristTable('People', 'PeopleID', "${movie.Director}",  CONFIG)
+  String directorName = fetchUniqueKeyFromGristTable('People', 'PeopleID', "${movie.Director}", CONFIG).FullName
+  String front_description = "${directorName}  (${releaseYear})"
 
-  String tags = "[ movie ]"
-  String category = "[ films ]"
-  String title = "${name} | film"
-  String description = "${director}  (${releaseYear})"
-  String text = movie.Text ?: ""
+  // tags
+  String front_tags = "[ movie ]"
 
-  def filename = "${date}-${slug}"
+  // category
+  String front_category = "[ films ]"
+
+  // ===  POST CONTENT  ===
+
+  String content_text = movie.Text ?: ""
+
+  // ===  POST MARKDOWN FILE CREATION  ===
+
+  String filename = "${front_date}-${front_slug}"
   File postFile = new File(CONFIG['postsDir'] as File, "${filename}.md")
+
+  // ===  POST ASSET DIRECTORY CREATION  ===
+
   File imageDir = new File(CONFIG['imagesDir'] as File, filename)
   imageDir.mkdirs()
 
-
-
-  // === MAIN IMAGE ===
+  // === MAIN IMAGE RETRIEVING ===
 
   int mainAttachmentId = movie.Picture?.get(1)
   String imageName = GetAttachmentNameFromGrist(mainAttachmentId, CONFIG)
-  mainImageFile = downloadAttachmentFromGrist(mainAttachmentId as int,
-    "main-${imageName}" as String,
-    imageDir,
-    CONFIG)
-  mainImagePath = mainImageFile.path as String
+  File mainImageFile = downloadAttachmentFromGrist(mainAttachmentId, "main-${imageName}",
+    imageDir, CONFIG)
+  String front_postimagename = mainImageFile.path
 
-
-  // === GALLERY IMAGES ===
-
-  def String gallery = mylib.addPictures(imageDir.toString(), true)
+  // === GALLERY IMAGES RETRIEVING ===
 
   galleryAttachments = movie.Gallery ?: []
   galleryAttachments.eachWithIndex { galleryAttachmentId, idx ->
@@ -191,53 +186,52 @@ def writeMoviePost(Map record, CONFIG) {
         imageDir,
         CONFIG)
     }
+  }
 
-    // === FRONTMATTER ==
+  // === POST GALLERY CONTENT CREATION  ==
+  String post_gallery = mylib.addPictures(imageDir.toString(), true)
 
-    postFile.text= """---
-layout: post
-date: ${date}
-slug: ${slug}
-title: "${title}"
-description: ${description}
-image: ${mainImagePath}
-tags: ${tags}
-categories: ${category}
+  // === FRONTMATTER ==
+
+  postFile.text = """---
+layout: ${front_layout}
+date: ${front_date}
+slug: ${front_slug}
+title: ${front_title}
+description: ${front_description}
+image: ${front_postimagename}
+tags: ${front_tags}
+categories: ${front_category}
 
 ---
 
-${text}
+${content_text}
 
-${gallery}
-
-
-{% if page.youtube %}
-  {% youtube page.youtube %}
-{% endif %}
-
-
-
+${post_gallery}
 
 """
 
-    println "✔ Post written (movie): ${postFile.name}"
-  }
-
+  println "✔ Post written (movie): ${postFile.name}"
 }
+
+
+// ===             ===
+// === MAIN SCRIPT ===
+// ===             ===
 
 // === LOAD LIBRARY ===
 
 print("   loading library...")
+
 class FunctionLoader {
   static def loadFunctions(String filePath) {
     def script = new GroovyShell().parse(new File(filePath))
     return script
   }
 }
- mylib = FunctionLoader.loadFunctions("_scripts/Mylibrary.groovy")
+
+mylib = FunctionLoader.loadFunctions("_scripts/Mylibrary.groovy")
 mylib.greenText("done!")
-
-
 
 // === MAIN EXECUTION ===
 

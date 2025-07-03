@@ -2,7 +2,7 @@
 layout: post
 date: 1992-07-05
 slug: opening-night
-title: "Opening Night | film"
+title: Opening Night | film
 description: John Cassavetes  (1977)
 image: assets/media/1992-07-05-opening-night/main-opening_night.webp
 tags: [ movie ]
@@ -46,13 +46,5 @@ Myrtle fails to show up on time for her call on opening night. When she finally 
 <div style="text-align: center;"><i>main-opening_night</i></div>
 
 <br><br>
-
-
-
-{% if page.youtube %}
-  {% youtube page.youtube %}
-{% endif %}
-
-
 
 

@@ -2,7 +2,7 @@
 layout: post
 date: 1986-05-03
 slug: annie-hall
-title: "Annie Hall | film"
+title: Annie Hall | film
 description: Woody Allen  (1977)
 image: assets/media/1986-05-03-annie-hall/main-Capture d’écran du 2025-06-25 07-51-16.png
 tags: [ movie ]
@@ -36,13 +36,5 @@ The last meeting between Annie and Alvy takes place on Manhattan's Upper West Si
 <div style="text-align: center;"><i>main-Capture d’écran du 2025-06-25 07-51-16</i></div>
 
 <br><br>
-
-
-
-{% if page.youtube %}
-  {% youtube page.youtube %}
-{% endif %}
-
-
 
 
