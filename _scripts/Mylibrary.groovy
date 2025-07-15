@@ -8,31 +8,6 @@ import static groovyx.net.http.Method.*
 
 
 
-static String addPictures(String imagedir, Boolean addpictures) {
-
-  def result   = ""
-
-  if (addpictures) {
-    def picturesDir = new File(imagedir)
-    def files = picturesDir.listFiles().sort { it.name }
-    files.each { file ->
-      result += "\n\n![text](${file.path})\n"
-      def caption = file.name.substring(0, file.name.lastIndexOf('.'))
-      if (caption[0] != '(') { // title of the file in parenthesis => do not display
-        result += "\n<div style=\"text-align: center;\"><i>${caption}</i></div>\n"
-      }
-        result += "\n<br><br>\n"
-
-    }
-
-    return result
-  }
-
-
-
-
-  return result
-}
 
 static String addMap(Object map)                     {   // [51.505, -0.09]
                                                          // 'A pretty CSS3 popup.<br> Easily customizable.'
